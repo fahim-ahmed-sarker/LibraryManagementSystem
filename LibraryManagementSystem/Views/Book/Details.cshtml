@@ -172,6 +172,19 @@
                        class="btn btn-warning">
                         Edit
                     </a>
+
+                      <div class="d-inline">
+
+                        <button type="button"
+                                class="btn btn-danger"
+                                data-bs-toggle="modal"
+                                data-bs-target="#deleteBookModal">
+                            <i class="bi bi-trash me-1"
+                               aria-hidden="true"></i>
+                            Delete
+                        </button>
+
+                    </div>
                 }
 
 
@@ -185,6 +198,83 @@
         </div>
 
     </div>
+
+    @if (User.IsInRole("Librarian"))
+    {
+        <div class="modal fade"
+             id="deleteBookModal"
+             tabindex="-1"
+             aria-labelledby="deleteBookModalLabel"
+             aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <div class="modal-title-wrap">
+                            <div class="modal-icon modal-icon-danger">
+                                <i class="bi bi-trash3"
+                                   aria-hidden="true"></i>
+                            </div>
+
+                            <h5 class="modal-title"
+                                id="deleteBookModalLabel">
+                                Delete book?
+                            </h5>
+                        </div>
+
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="mb-1">
+                            You are about to delete
+                            <strong>@Model.Title</strong>.
+                        </p>
+
+                        <p class="modal-warning mb-0">
+                            This action cannot be undone.
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button"
+                                class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+
+                        <form asp-action="Delete"
+                              method="post">
+
+                            <input type="hidden"
+                                   name="id"
+                                   value="@Model.BookID" />
+
+                            <button type="submit"
+                                    class="btn btn-danger">
+                                <i class="bi bi-trash3 me-1"
+                                   aria-hidden="true"></i>
+                                Delete Book
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
 
 
     <!-- RATING SUMMARY -->
@@ -248,8 +338,7 @@
                             </strong>
 
                             <small class="text-muted">
-                                @feedback.DateSubmitted
-                                .ToString("dd MMM yyyy")
+                                @feedback.DateSubmitted.ToString("dd MMM yyyy")
                             </small>
 
                         </div>

@@ -16,5 +16,10 @@ namespace LibraryManagementSystem.Models
         [EmailAddress(ErrorMessage = "Enter a valid email address.")]
         [Display(Name = "Email")]
         public string Email { get; set; } = string.Empty;
+
+        public string? CurrentProfileImageUrl { get; set; }
+
+        [Display(Name = "Profile Picture")]
+        public IFormFile? ProfilePicture { get; set; }
     }
 }

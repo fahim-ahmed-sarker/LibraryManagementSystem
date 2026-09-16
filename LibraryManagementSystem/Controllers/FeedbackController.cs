@@ -196,6 +196,113 @@ namespace LibraryManagementSystem.Controllers
         }
 
         // ==========================================
+        // MEMBER - EDIT FEEDBACK
+        // ==========================================
+
+        [Authorize(Roles = "Member")]
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var member = await GetCurrentMemberAsync();
+
+            if (member == null)
+                return NotFound("Member profile not found.");
+
+            var feedback = await _context.Feedbacks
+                .Include(f => f.Book)
+                .FirstOrDefaultAsync(f =>
+                    f.FeedbackID == id &&
+                    f.MemberID == member.MemberID);
+
+            if (feedback == null)
+                return NotFound();
+
+            return View(feedback);
+        }
+
+        [Authorize(Roles = "Member")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(
+            int id,
+            int rating,
+            string? comment)
+        {
+            var member = await GetCurrentMemberAsync();
+
+            if (member == null)
+                return NotFound("Member profile not found.");
+
+            var feedback = await _context.Feedbacks
+                .FirstOrDefaultAsync(f =>
+                    f.FeedbackID == id &&
+                    f.MemberID == member.MemberID);
+
+            if (feedback == null)
+                return NotFound();
+
+            if (rating < 1 || rating > 5)
+            {
+                ModelState.AddModelError(
+                    "",
+                    "Rating must be between 1 and 5.");
+            }
+
+            if (comment?.Length > 1000)
+            {
+                ModelState.AddModelError(
+                    "",
+                    "Comment cannot exceed 1000 characters.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                feedback.Rating = rating;
+                feedback.Comment = comment;
+                feedback.Book = await _context.Books
+                    .FirstOrDefaultAsync(b => b.BookID == feedback.BookID);
+
+                return View(feedback);
+            }
+
+            feedback.Rating = rating;
+            feedback.Comment = comment;
+            feedback.DateSubmitted = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Your review has been updated successfully.";
+
+            return RedirectToAction(nameof(MyFeedback));
+        }
+
+        [Authorize(Roles = "Member")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteMine(int id)
+        {
+            var member = await GetCurrentMemberAsync();
+
+            if (member == null)
+                return NotFound("Member profile not found.");
+
+            var feedback = await _context.Feedbacks
+                .FirstOrDefaultAsync(f =>
+                    f.FeedbackID == id &&
+                    f.MemberID == member.MemberID);
+
+            if (feedback == null)
+                return NotFound();
+
+            _context.Feedbacks.Remove(feedback);
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Your review has been deleted successfully.";
+
+            return RedirectToAction(nameof(MyFeedback));
+        }
+
+        // ==========================================
         // LIBRARIAN - ALL FEEDBACK
         // ==========================================
 

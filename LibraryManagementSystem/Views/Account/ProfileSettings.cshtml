@@ -24,13 +24,50 @@
             </div>
         }
 
-        <form asp-action="ProfileSettings"
-              method="post">
+          <form asp-action="ProfileSettings"
+              method="post"
+              enctype="multipart/form-data">
 
             <div asp-validation-summary="ModelOnly"
                  class="text-danger mb-3"></div>
 
             <div class="settings-panel">
+
+                <div class="profile-picture-settings mb-4">
+
+                    @if (!string.IsNullOrEmpty(Model.CurrentProfileImageUrl))
+                    {
+                        <img src="@Model.CurrentProfileImageUrl"
+                             class="profile-picture-preview"
+                             alt="Current profile picture" />
+                    }
+                    else
+                    {
+                        <div class="profile-picture-placeholder">
+                            <i class="bi bi-person"
+                               aria-hidden="true"></i>
+                        </div>
+                    }
+
+                    <div class="profile-picture-copy">
+
+                        <label asp-for="ProfilePicture"
+                               class="form-label mb-1"></label>
+
+                        <p class="settings-meta mb-2">
+                            Upload a JPG, PNG, or WEBP image up to 2 MB.
+                        </p>
+
+                        <input asp-for="ProfilePicture"
+                               class="form-control"
+                               accept=".jpg,.jpeg,.png,.webp" />
+
+                        <span asp-validation-for="ProfilePicture"
+                              class="text-danger"></span>
+
+                    </div>
+
+                </div>
 
                 <div class="mb-3">
                     <label asp-for="FullName"

@@ -10,6 +10,13 @@
         My Feedback
     </h1>
 
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
     @if (!Model.Any())
     {
         <div class="alert alert-info">
@@ -57,10 +64,38 @@
                         </p>
                     }
 
+                          <div class="d-flex gap-2 mb-2">
+
+                                <a asp-action="Edit"
+                                    asp-route-id="@feedback.FeedbackID"
+                                    class="btn btn-sm btn-outline-primary">
+                                     <i class="bi bi-pencil me-1"
+                                         aria-hidden="true"></i>
+                                     Edit Review
+                                </a>
+
+                                <form asp-action="DeleteMine"
+                                        method="post"
+                                        onsubmit="return confirm('Delete this review?');">
+
+                                     <input type="hidden"
+                                              name="id"
+                                              value="@feedback.FeedbackID" />
+
+                                     <button type="submit"
+                                                class="btn btn-sm btn-outline-danger">
+                                          <i class="bi bi-trash me-1"
+                                              aria-hidden="true"></i>
+                                          Delete
+                                     </button>
+
+                                </form>
+
+                          </div>
+
                     <small class="text-muted">
                         Submitted:
-                        @feedback.DateSubmitted
-                        .ToString("dd MMM yyyy HH:mm")
+                        @feedback.DateSubmitted.ToString("dd MMM yyyy HH:mm")
                     </small>
 
                 </div>

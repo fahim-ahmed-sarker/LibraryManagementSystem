@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
-  <title id="title">City Knowledge Library logo</title>
-  <desc id="desc">A stylized open book in teal and amber</desc>
-  <rect width="96" height="96" rx="20" fill="#d99037"/>
-  <path d="M18 25c13 0 22 3 30 10v39c-8-7-17-10-30-10V25Z" fill="#fff"/>
-  <path d="M78 25c-13 0-22 3-30 10v39c8-7 17-10 30-10V25Z" fill="#e7f3f1"/>
-  <path d="M48 35v39" fill="none" stroke="#187c78" stroke-width="4"/>
-  <path d="M24 36c8 1 15 3 20 7M72 36c-8 1-15 3-20 7" fill="none" stroke="#187c78" stroke-linecap="round" stroke-width="3"/>
-</svg>

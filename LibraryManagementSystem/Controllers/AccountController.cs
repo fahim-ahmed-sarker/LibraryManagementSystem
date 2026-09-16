@@ -13,17 +13,20 @@ namespace LibraryManagementSystem.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
+        private readonly IWebHostEnvironment _environment;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ApplicationDbContext context,
-            IConfiguration configuration)
+            IConfiguration configuration,
+            IWebHostEnvironment environment)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _context = context;
             _configuration = configuration;
+            _environment = environment;
         }
 
         // ==========================================
@@ -384,7 +387,8 @@ namespace LibraryManagementSystem.Controllers
             var model = new ProfileSettingsViewModel
             {
                 FullName = user.FullName,
-                Email = user.Email ?? string.Empty
+                Email = user.Email ?? string.Empty,
+                CurrentProfileImageUrl = user.ProfileImageUrl
             };
 
             return View(model);
@@ -409,6 +413,26 @@ namespace LibraryManagementSystem.Controllers
 
             user.FullName = model.FullName.Trim();
 
+            if (model.ProfilePicture != null &&
+                model.ProfilePicture.Length > 0)
+            {
+                var imageUrl = await SaveProfileImage(model.ProfilePicture);
+
+                if (imageUrl == null)
+                {
+                    ModelState.AddModelError(
+                        "ProfilePicture",
+                        "Please upload a PNG, JPG, JPEG, or WEBP image up to 2 MB.");
+
+                    model.Email = user.Email ?? string.Empty;
+                    model.CurrentProfileImageUrl = user.ProfileImageUrl;
+
+                    return View(model);
+                }
+
+                user.ProfileImageUrl = imageUrl;
+            }
+
             var result = await _userManager.UpdateAsync(user);
 
             if (!result.Succeeded)
@@ -424,6 +448,46 @@ namespace LibraryManagementSystem.Controllers
             TempData["SuccessMessage"] = "Your profile has been updated successfully.";
 
             return RedirectToAction(nameof(ProfileSettings));
+        }
+
+        private async Task<string?> SaveProfileImage(IFormFile image)
+        {
+            const long maxFileSize = 2 * 1024 * 1024;
+
+            var allowedExtensions = new[]
+            {
+                ".jpg",
+                ".jpeg",
+                ".png",
+                ".webp"
+            };
+
+            var extension = Path.GetExtension(image.FileName)
+                .ToLowerInvariant();
+
+            if (image.Length > maxFileSize ||
+                !allowedExtensions.Contains(extension))
+            {
+                return null;
+            }
+
+            var uploadsFolder = Path.Combine(
+                _environment.WebRootPath,
+                "images",
+                "profiles");
+
+            Directory.CreateDirectory(uploadsFolder);
+
+            var fileName = $"{Guid.NewGuid()}{extension}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            await using var stream = new FileStream(
+                filePath,
+                FileMode.Create);
+
+            await image.CopyToAsync(stream);
+
+            return $"/images/profiles/{fileName}";
         }
 
         [HttpGet]
