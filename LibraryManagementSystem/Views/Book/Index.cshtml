@@ -1,0 +1,166 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Book>
+
+@{
+    ViewData["Title"] = "Book Catalogue";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Book Catalogue</h1>
+
+        @if (User.IsInRole("Librarian"))
+        {
+            <a asp-action="Create"
+               class="btn btn-primary">
+                Add New Book
+            </a>
+        }
+    </div>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    <!-- Search -->
+
+    <form asp-action="Index"
+          method="get"
+          class="row g-2 mb-4">
+
+        <div class="col-md-6">
+
+            <input type="text"
+                   name="search"
+                   value="@ViewBag.Search"
+                   class="form-control"
+                   placeholder="Search title, author or ISBN..." />
+
+        </div>
+
+        <div class="col-md-4">
+
+            <select name="genre"
+                    class="form-select">
+
+                <option value="">
+                    All Genres
+                </option>
+
+                @foreach (var item in ViewBag.Genres)
+                {
+                    <option value="@item"
+                            selected="@(ViewBag.Genre == item)">
+                        @item
+                    </option>
+                }
+
+            </select>
+
+        </div>
+
+        <div class="col-md-2">
+
+            <button type="submit"
+                    class="btn btn-dark w-100">
+                Search
+            </button>
+
+        </div>
+
+    </form>
+
+
+    <div class="row">
+
+        @foreach (var book in Model)
+        {
+            <div class="col-md-4 col-lg-3 mb-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    @if (!string.IsNullOrEmpty(book.CoverImageUrl))
+                    {
+                        <img src="@book.CoverImageUrl"
+                             class="card-img-top"
+                             style="height:260px; object-fit:cover;"
+                             alt="@book.Title" />
+                    }
+                    else
+                    {
+                        <div class="d-flex align-items-center justify-content-center bg-light"
+                             style="height:260px;">
+                            <span class="text-muted">
+                                No Cover
+                            </span>
+                        </div>
+                    }
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            @book.Title
+                        </h5>
+
+                        <p class="mb-1">
+                            <strong>Author:</strong>
+                            @book.Author
+                        </p>
+
+                        <p class="mb-1">
+                            <strong>Genre:</strong>
+                            @book.Genre
+                        </p>
+
+                        <p>
+                            <strong>Status:</strong>
+
+                            @if (book.AvailabilityStatus == "Available")
+                            {
+                                <span class="badge bg-success">
+                                    Available
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning text-dark">
+                                    @book.AvailabilityStatus
+                                </span>
+                            }
+                        </p>
+
+                        <a asp-action="Details"
+                           asp-route-id="@book.BookID"
+                           class="btn btn-outline-primary btn-sm">
+                            View Details
+                        </a>
+
+                        @if (User.IsInRole("Librarian"))
+                        {
+                            <a asp-action="Edit"
+                               asp-route-id="@book.BookID"
+                               class="btn btn-outline-warning btn-sm">
+                                Edit
+                            </a>
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            No books found.
+        </div>
+    }
+
+</div>

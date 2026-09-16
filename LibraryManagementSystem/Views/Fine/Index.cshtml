@@ -1,0 +1,142 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Fine>
+
+@{
+    ViewData["Title"] = "Fine Management";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h1>Fine Management</h1>
+
+        <a asp-controller="BorrowTransaction"
+           asp-action="Manage"
+           class="btn btn-primary">
+            Transaction Management
+        </a>
+
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            No fines have been recorded.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-striped">
+
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>Book</th>
+                        <th>Due Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Paid Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var fine in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                @fine.Transaction?.Member?.Name
+                            </td>
+
+                            <td>
+                                @fine.Transaction?.Book?.Title
+                            </td>
+
+                            <td>
+                                @fine.Transaction?.DueDate.ToString("dd MMM yyyy")
+                            </td>
+
+                            <td>
+                                <strong>
+                                    @fine.Amount.ToString("C")
+                                </strong>
+                            </td>
+
+                            <td>
+
+                                @if (fine.IsPaid)
+                                {
+                                    <span class="badge bg-success">
+                                        Paid
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">
+                                        Unpaid
+                                    </span>
+                                }
+
+                            </td>
+
+                            <td>
+                                @(fine.PaidDate?.ToString("dd MMM yyyy") ?? "-")
+                            </td>
+
+                            <td>
+
+                                @if (!fine.IsPaid)
+                                {
+                                    <form asp-action="MarkPaid"
+                                          method="post"
+                                          class="d-inline">
+
+                                        <input type="hidden"
+                                               name="id"
+                                               value="@fine.FineID" />
+
+                                        <button type="submit"
+                                                class="btn btn-sm btn-success">
+                                            Mark Paid
+                                        </button>
+
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">
+                                        Completed
+                                    </span>
+                                }
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    }
+
+</div>

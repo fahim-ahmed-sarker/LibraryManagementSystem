@@ -1,0 +1,82 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.BorrowTransaction>
+
+@{
+    ViewData["Title"] = "Borrowing History";
+}
+
+<div class="container mt-4">
+
+    <h1>Borrowing History</h1>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Borrowed</th>
+                <th>Due</th>
+                <th>Returned</th>
+                <th>Status</th>
+                <th>Fine</th>
+                <th>Fine Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var transaction in Model)
+            {
+                <tr>
+
+                    <td>
+                        @transaction.Book?.Title
+                    </td>
+
+                    <td>
+                        @transaction.BorrowDate.ToString("dd MMM yyyy")
+                    </td>
+
+                    <td>
+                        @transaction.DueDate.ToString("dd MMM yyyy")
+                    </td>
+
+                    <td>
+                        @(transaction.ReturnDate?
+                            .ToString("dd MMM yyyy") ?? "-")
+                    </td>
+
+                    <td>
+                        @transaction.Status
+                    </td>
+
+                    <td>
+                        @(transaction.Fine?.Amount.ToString("C") ?? "-")
+                    </td>
+
+                    <td>
+                        @if (transaction.Fine == null)
+                        {
+                            <span>-</span>
+                        }
+                        else if (transaction.Fine.IsPaid)
+                        {
+                            <span class="badge bg-success">
+                                Paid
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">
+                                Unpaid
+                            </span>
+                        }
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

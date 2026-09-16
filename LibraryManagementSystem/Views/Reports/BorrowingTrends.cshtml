@@ -1,0 +1,72 @@
+﻿@model IEnumerable<LibraryManagementSystem.Controllers.BorrowingTrendViewModel>
+
+@{
+    ViewData["Title"] = "Borrowing Trends";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between
+                align-items-center mb-4">
+
+        <h1>
+            📈 Borrowing Trends
+        </h1>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Back to Reports
+        </a>
+
+    </div>
+
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            No borrowing data is available yet.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+
+            <table class="table table-bordered
+                          table-striped">
+
+                <thead class="table-dark">
+
+                    <tr>
+                        <th>Period</th>
+                        <th>Number of Borrowings</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @item.MonthName
+                        </td>
+
+                        <td>
+                            <strong>
+                                @item.BorrowCount
+                            </strong>
+                        </td>
+
+                    </tr>
+                }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    }
+
+</div>

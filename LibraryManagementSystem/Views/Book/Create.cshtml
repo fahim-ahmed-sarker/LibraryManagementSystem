@@ -1,0 +1,142 @@
+﻿@model LibraryManagementSystem.Models.Book
+
+@{
+    ViewData["Title"] = "Add Book";
+}
+
+<div class="container mt-4">
+
+    <h1>Add New Book</h1>
+
+    <form asp-action="Create"
+          method="post"
+          enctype="multipart/form-data">
+
+        <div asp-validation-summary="ModelOnly"
+             class="text-danger mb-3">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Title"
+                   class="form-label"></label>
+
+            <input asp-for="Title"
+                   class="form-control" />
+
+            <span asp-validation-for="Title"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Author"
+                   class="form-label"></label>
+
+            <input asp-for="Author"
+                   class="form-control" />
+
+            <span asp-validation-for="Author"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Genre"
+                   class="form-label"></label>
+
+            <input asp-for="Genre"
+                   class="form-control" />
+
+            <span asp-validation-for="Genre"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ISBN"
+                   class="form-label"></label>
+
+            <input asp-for="ISBN"
+                   class="form-control"
+                   placeholder="10 or 13 digits" />
+
+            <span asp-validation-for="ISBN"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Summary"
+                   class="form-label"></label>
+
+            <textarea asp-for="Summary"
+                      class="form-control"
+                      rows="5"></textarea>
+
+            <span asp-validation-for="Summary"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="LibraryID"
+                   class="form-label">
+                Library
+            </label>
+
+            <select asp-for="LibraryID"
+                    class="form-select">
+
+                <option value="">
+                    -- Select Library --
+                </option>
+
+                @foreach (var library in ViewBag.Libraries)
+                {
+                    <option value="@library.LibraryID">
+                        @library.Name
+                    </option>
+                }
+
+            </select>
+
+            <span asp-validation-for="LibraryID"
+                  class="text-danger"></span>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="CoverImageUrl"
+                   class="form-label">
+                Cover Image
+            </label>
+
+            <input type="file"
+                   name="coverImage"
+                   class="form-control"
+                   accept=".jpg,.jpeg,.png,.webp" />
+
+            <small class="text-muted">
+                Maximum 2 MB. JPG, PNG or WEBP.
+            </small>
+
+        </div>
+
+        <input type="hidden"
+               asp-for="AvailabilityStatus"
+               value="Available" />
+
+        <button type="submit"
+                class="btn btn-primary">
+            Add Book
+        </button>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

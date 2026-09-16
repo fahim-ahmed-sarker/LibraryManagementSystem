@@ -1,32 +1,89 @@
+using LibraryManagementSystem.Data;
 using LibraryManagementSystem.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementSystem.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ApplicationDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            // ==========================================
+            // NEW ARRIVALS
+            // ==========================================
+
+            var newArrivals = await _context.Books
+                .Include(b => b.Library)
+                .OrderByDescending(b => b.DateAdded)
+                .Take(6)
+                .ToListAsync();
+
+
+            // ==========================================
+            // MOST BORROWED BOOKS
+            // ==========================================
+
+            var mostBorrowed = await _context.Books
+                .Include(b => b.Library)
+                .OrderByDescending(b =>
+                    b.Transactions.Count)
+                .Take(6)
+                .ToListAsync();
+
+
+            // ==========================================
+            // CURRENTLY AVAILABLE BOOKS
+            // ==========================================
+
+            var availableBooks = await _context.Books
+                .Include(b => b.Library)
+                .Where(b =>
+                    b.AvailabilityStatus == "Available")
+                .OrderBy(b => b.Title)
+                .Take(6)
+                .ToListAsync();
+
+
+            // ==========================================
+            // RECOMMENDED BOOKS
+            // ==========================================
+            //
+            // For now, recommendations are based on
+            // popular books. Later we can make this
+            // personalized using member history.
+            // ==========================================
+
+            var recommendedBooks = await _context.Books
+                .Include(b => b.Library)
+                .Include(b => b.Feedbacks)
+                .OrderByDescending(b =>
+                    b.Feedbacks.Any()
+                        ? b.Feedbacks.Average(f => f.Rating)
+                        : 0)
+                .ThenByDescending(b =>
+                    b.Transactions.Count)
+                .Take(6)
+                .ToListAsync();
+
+
+            // ==========================================
+            // SEND DATA TO VIEW
+            // ==========================================
+
+            ViewBag.NewArrivals = newArrivals;
+            ViewBag.MostBorrowed = mostBorrowed;
+            ViewBag.AvailableBooks = availableBooks;
+            ViewBag.RecommendedBooks = recommendedBooks;
+
             return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

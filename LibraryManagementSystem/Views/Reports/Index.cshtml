@@ -1,0 +1,262 @@
+﻿@{
+    ViewData["Title"] = "Reports Dashboard";
+}
+
+<div class="container mt-4">
+
+    <div class="mb-4">
+        <h1>Reports Dashboard</h1>
+
+        <p class="text-muted">
+            Library statistics and management reports.
+        </p>
+    </div>
+
+
+    <!-- SUMMARY CARDS -->
+
+    <div class="row mb-5">
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Total Books
+                    </h6>
+
+                    <h2>
+                        @ViewBag.TotalBooks
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Total Members
+                    </h6>
+
+                    <h2>
+                        @ViewBag.TotalMembers
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Total Borrowings
+                    </h6>
+
+                    <h2>
+                        @ViewBag.TotalBorrowings
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Active Borrowings
+                    </h6>
+
+                    <h2>
+                        @ViewBag.ActiveBorrowings
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Overdue Books
+                    </h6>
+
+                    <h2>
+                        @ViewBag.OverdueBooks
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Unpaid Fines
+                    </h6>
+
+                    <h2>
+                        @ViewBag.UnpaidFines.ToString("C")
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- REPORT LINKS -->
+
+    <h3 class="mb-3">
+        Available Reports
+    </h3>
+
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h4>
+                        📈 Borrowing Trends
+                    </h4>
+
+                    <p class="text-muted">
+                        View borrowing activity by month.
+                    </p>
+
+                    <a asp-action="BorrowingTrends"
+                       class="btn btn-primary">
+                        View Report
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h4>
+                        ⚠️ Overdue Books
+                    </h4>
+
+                    <p class="text-muted">
+                        View books that are currently overdue.
+                    </p>
+
+                    <a asp-action="OverdueBooks"
+                       class="btn btn-danger">
+                        View Report
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h4>
+                        👥 Most Active Members
+                    </h4>
+
+                    <p class="text-muted">
+                        View members ordered by borrowing activity.
+                    </p>
+
+                    <a asp-action="MostActiveMembers"
+                       class="btn btn-success">
+                        View Report
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h4>
+                        🔥 Most Popular Books
+                    </h4>
+
+                    <p class="text-muted">
+                        View books ranked by borrowing activity
+                        and ratings.
+                    </p>
+
+                    <a asp-action="MostPopularBooks"
+                       class="btn btn-warning">
+                        View Report
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

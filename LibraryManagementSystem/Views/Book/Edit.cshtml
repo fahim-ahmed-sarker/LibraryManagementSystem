@@ -1,0 +1,168 @@
+﻿@model LibraryManagementSystem.Models.Book
+
+@{
+    ViewData["Title"] = "Edit Book";
+}
+
+<div class="container mt-4">
+
+    <h1>Edit Book</h1>
+
+    <form asp-action="Edit"
+          method="post"
+          enctype="multipart/form-data">
+
+        <input type="hidden"
+               asp-for="BookID" />
+
+        <div asp-validation-summary="ModelOnly"
+             class="text-danger mb-3">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Title"
+                   class="form-label"></label>
+            <input asp-for="Title"
+                   class="form-control" />
+            <span asp-validation-for="Title"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Author"
+                   class="form-label"></label>
+            <input asp-for="Author"
+                   class="form-control" />
+            <span asp-validation-for="Author"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Genre"
+                   class="form-label"></label>
+            <input asp-for="Genre"
+                   class="form-control" />
+            <span asp-validation-for="Genre"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ISBN"
+                   class="form-label"></label>
+            <input asp-for="ISBN"
+                   class="form-control" />
+            <span asp-validation-for="ISBN"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Summary"
+                   class="form-label"></label>
+            <textarea asp-for="Summary"
+                      class="form-control"
+                      rows="5"></textarea>
+            <span asp-validation-for="Summary"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="LibraryID"
+                   class="form-label">
+                Library
+            </label>
+
+            <select asp-for="LibraryID"
+                    class="form-select">
+
+                @foreach (var library in ViewBag.Libraries)
+                {
+                    <option value="@library.LibraryID">
+                        @library.Name
+                    </option>
+                }
+
+            </select>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="AvailabilityStatus"
+                   class="form-label">
+            </label>
+
+            <select asp-for="AvailabilityStatus"
+                    class="form-select">
+
+                <option value="Available">
+                    Available
+                </option>
+
+                <option value="Borrowed">
+                    Borrowed
+                </option>
+
+                <option value="Reserved">
+                    Reserved
+                </option>
+
+                <option value="Overdue">
+                    Overdue
+                </option>
+
+            </select>
+
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.CoverImageUrl))
+        {
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Current Cover
+                </label>
+
+                <br />
+
+                <img src="@Model.CoverImageUrl"
+                     style="width:150px;"
+                     class="rounded shadow" />
+
+            </div>
+        }
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Replace Cover
+            </label>
+
+            <input type="file"
+                   name="coverImage"
+                   class="form-control"
+                   accept=".jpg,.jpeg,.png,.webp" />
+
+            <small class="text-muted">
+                Maximum 2 MB.
+            </small>
+
+        </div>
+
+        <button type="submit"
+                class="btn btn-success">
+            Save Changes
+        </button>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

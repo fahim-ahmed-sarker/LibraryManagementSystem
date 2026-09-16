@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Reserve Book";
+    var book = ViewBag.Book as LibraryManagementSystem.Models.Book;
+}
+
+<div class="container mt-4">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h2 class="mb-4">
+                        Reserve Book
+                    </h2>
+
+                    @if (book != null)
+                    {
+                        <h4>
+                            @book.Title
+                        </h4>
+
+                        <p>
+                            <strong>Author:</strong>
+                            @book.Author
+                        </p>
+
+                        <p>
+                            <strong>Genre:</strong>
+                            @book.Genre
+                        </p>
+
+                        <p>
+                            <strong>Status:</strong>
+
+                            <span class="badge bg-warning text-dark">
+                                @book.AvailabilityStatus
+                            </span>
+                        </p>
+
+                        <hr />
+
+                        <p>
+                            This book is currently unavailable.
+                            You can reserve it and receive priority
+                            when it becomes available.
+                        </p>
+
+                        <form asp-action="Create"
+                              method="post">
+
+                            <input type="hidden"
+                                   name="bookId"
+                                   value="@book.BookID" />
+
+                            <button type="submit"
+                                    class="btn btn-success">
+                                Confirm Reservation
+                            </button>
+
+                            <a asp-controller="Book"
+                               asp-action="Details"
+                               asp-route-id="@book.BookID"
+                               class="btn btn-secondary">
+                                Cancel
+                            </a>
+
+                        </form>
+                    }
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

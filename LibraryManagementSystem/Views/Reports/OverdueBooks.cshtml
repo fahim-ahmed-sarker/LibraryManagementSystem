@@ -1,0 +1,117 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.BorrowTransaction>
+
+@{
+    ViewData["Title"] = "Overdue Books";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between
+                align-items-center mb-4">
+
+        <h1>
+            ⚠️ Overdue Books
+        </h1>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Back to Reports
+        </a>
+
+    </div>
+
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-success">
+            There are currently no overdue books.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+
+            <table class="table table-bordered
+                          table-striped">
+
+                <thead class="table-dark">
+
+                    <tr>
+                        <th>Book</th>
+                        <th>Member</th>
+                        <th>Borrow Date</th>
+                        <th>Due Date</th>
+                        <th>Days Overdue</th>
+                        <th>Fine</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                @foreach (var transaction in Model)
+                {
+                    var daysOverdue =
+                        Math.Max(
+                            0,
+                            (DateTime.Now.Date -
+                             transaction.DueDate.Date).Days);
+
+                    <tr>
+
+                        <td>
+                            @transaction.Book?.Title
+                        </td>
+
+                        <td>
+                            @transaction.Member?.Name
+                            <br />
+                            <small class="text-muted">
+                                @transaction.Member?.Email
+                            </small>
+                        </td>
+
+                        <td>
+                            @transaction.BorrowDate
+                                .ToString("dd MMM yyyy")
+                        </td>
+
+                        <td>
+                            @transaction.DueDate
+                                .ToString("dd MMM yyyy")
+                        </td>
+
+                        <td>
+
+                            <span class="badge bg-danger">
+                                @daysOverdue day(s)
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            @if (transaction.Fine != null)
+                            {
+                                @transaction.Fine.Amount.ToString("C")
+                            }
+                            else
+                            {
+                                <span class="text-muted">
+                                    Not generated
+                                </span>
+                            }
+
+                        </td>
+
+                    </tr>
+                }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    }
+
+</div>

@@ -1,0 +1,115 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Feedback>
+
+@{
+    ViewData["Title"] = "Feedback Management";
+}
+
+<div class="container mt-4">
+
+    <h1 class="mb-4">
+        Feedback Management
+    </h1>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            No feedback has been submitted.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-striped">
+
+                <thead>
+
+                    <tr>
+                        <th>Book</th>
+                        <th>Member</th>
+                        <th>Rating</th>
+                        <th>Comment</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    @foreach (var feedback in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                @feedback.Book?.Title
+                            </td>
+
+                            <td>
+                                @feedback.Member?.Name
+                            </td>
+
+                            <td>
+
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    if (i <= feedback.Rating)
+                                    {
+                                        <span>⭐</span>
+                                    }
+                                    else
+                                    {
+                                        <span>☆</span>
+                                    }
+                                }
+
+                            </td>
+
+                            <td>
+                                @(string.IsNullOrWhiteSpace(feedback.Comment)
+                                    ? "-"
+                                    : feedback.Comment)
+                            </td>
+
+                            <td>
+                                @feedback.DateSubmitted
+                                .ToString("dd MMM yyyy")
+                            </td>
+
+                            <td>
+
+                                <form asp-action="Delete"
+                                      method="post"
+                                      onsubmit="return confirm('Delete this feedback?');">
+
+                                    <input type="hidden"
+                                           name="id"
+                                           value="@feedback.FeedbackID" />
+
+                                    <button type="submit"
+                                            class="btn btn-sm btn-danger">
+                                        Delete
+                                    </button>
+
+                                </form>
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    }
+
+</div>

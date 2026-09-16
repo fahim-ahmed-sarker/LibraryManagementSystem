@@ -3,100 +3,264 @@
   "WorkspaceRootPath": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\librariancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\librariancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\account\\registerlibrarian.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\account\\registerlibrarian.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{24DE8AE7-E1AB-46E0-A171-2B15B6B6BFB1}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem.tests\\borrowingservicetests.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24DE8AE7-E1AB-46E0-A171-2B15B6B6BFB1}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|solutionrelative:librarymanagementsystem.tests\\borrowingservicetests.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\account\\registermember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\account\\registermember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\librarian\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\librarian\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\account\\registerlibrarian.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\account\\registerlibrarian.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\reports\\mostpopularbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\reports\\mostpopularbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\reports\\mostactivemembers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\reports\\mostactivemembers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\migrations\\20260915213120_addidentitylinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\migrations\\20260915213120_addidentitylinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\reports\\overduebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\reports\\overduebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\reports\\borrowingtrends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\reports\\borrowingtrends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\reports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\reports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\feedback\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\feedback\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\feedback\\myfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\feedback\\myfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\feedback\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\feedback\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\borrowtransaction\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\borrowtransaction\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\borrowtransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\borrowtransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\fine\\myfines.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\fine\\myfines.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\fine\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\fine\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\finecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\finecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\services\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\services\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\reservation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\reservation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\reservation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\reservation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\borrowtransaction\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\borrowtransaction\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\borrowtransaction\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\borrowtransaction\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\borrowingconfig\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\borrowingconfig\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\borrowingconfig\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\borrowingconfig\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\borrowingconfig\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\borrowingconfig\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\borrowingconfigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\borrowingconfigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\book\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\book\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\library\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\library\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\library\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\library\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\library\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\library\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\library\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\library\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\librariancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\librariancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\librarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\librarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\librarian\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\librarian\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\account\\registermember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\account\\registermember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\migrations\\20260915213120_addidentitylinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\migrations\\20260915213120_addidentitylinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\borrowingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\borrowingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB86432A-5607-4A36-8CCF-8FC82F632A79}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\librarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\librarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\borrowingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\borrowingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\project \u0026 assignment\\librarymanagementsystem\\librarymanagementsystem\\models\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,206 +270,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Librarian\\Index.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Librarian\\Index.cshtml",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Librarian\\Index.cshtml",
-              "RelativeToolTip": "LibraryManagementSystem\\Views\\Librarian\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-15T21:43:28.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Member\\Index.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Member\\Index.cshtml",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Member\\Index.cshtml",
-              "RelativeToolTip": "LibraryManagementSystem\\Views\\Member\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-15T21:42:47.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LibrarianController.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\LibrarianController.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\LibrarianController.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\LibrarianController.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\LibrarianController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAADwv48AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T21:42:06.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MemberController.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\MemberController.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\MemberController.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\MemberController.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\MemberController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T21:41:42.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RegisterLibrarian.cshtml",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\RegisterLibrarian.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Account\\RegisterLibrarian.cshtml",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\RegisterLibrarian.cshtml",
-              "RelativeToolTip": "LibraryManagementSystem\\Views\\Account\\RegisterLibrarian.cshtml",
-              "ViewState": "AgIAAEQAAAAAAAAAAADwv2EAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-15T21:40:05.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterMember.cshtml",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\RegisterMember.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Account\\RegisterMember.cshtml",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\RegisterMember.cshtml",
-              "RelativeToolTip": "LibraryManagementSystem\\Views\\Account\\RegisterMember.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAADwv04AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-15T21:39:30.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\RegisterViewModel.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\RegisterViewModel.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Models\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Title": "BorrowingServiceTests.cs.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem.Tests\\BorrowingServiceTests.cs.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Tests\\BorrowingServiceTests.cs.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem.Tests\\BorrowingServiceTests.cs.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Tests\\BorrowingServiceTests.cs.cs",
+              "ViewState": "AgIAAO4BAAAAAAAAAAAwwA8CAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T21:37:56.055Z",
+              "WhenOpened": "2026-09-16T10:28:12.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "LibraryManagementSystem\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAmwD8AAAAGAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "BorrowingTrends.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\BorrowingTrends.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Reports\\BorrowingTrends.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\BorrowingTrends.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Reports\\BorrowingTrends.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwEcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-15T21:36:35.53Z",
+              "WhenOpened": "2026-09-16T10:19:08.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\ReportsController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAADwv8oAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:18:25.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\AccountController.cs",
               "RelativeToolTip": "LibraryManagementSystem\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAADwvwIBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAC0BAAAAAAAAAADwv1EBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-15T21:34:47.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20260915213120_AddIdentityLinks.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915213120_AddIdentityLinks.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Migrations\\20260915213120_AddIdentityLinks.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915213120_AddIdentityLinks.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Migrations\\20260915213120_AddIdentityLinks.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T21:31:20.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20260915212726_AddIdentityLinks.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T21:27:26.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Program.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:48:27.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Feedback.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Feedback.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Feedback.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Feedback.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Models\\Feedback.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:56:51.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Fine.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Fine.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Fine.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Fine.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Models\\Fine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:56:29.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BorrowTransaction.cs",
-              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\BorrowTransaction.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\BorrowTransaction.cs",
-              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\BorrowTransaction.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Models\\BorrowTransaction.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:55:39.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\appsettings.json",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\appsettings.json",
@@ -318,7 +339,673 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterLibrarian.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\RegisterLibrarian.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Account\\RegisterLibrarian.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\RegisterLibrarian.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Account\\RegisterLibrarian.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T21:40:05.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\RegisterViewModel.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T21:37:56.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAMgBAAAAAAAAAAAmwNsBAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T10:15:31.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Reports\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Reports\\Index.cshtml",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAmwAUBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T10:19:14.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\BookController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\BookController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAFMBAAAAAAAAAADwv1UAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T08:57:58.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OverdueBooks.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\OverdueBooks.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Reports\\OverdueBooks.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\OverdueBooks.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Reports\\OverdueBooks.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwHQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T10:19:25.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MostPopularBooks.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\MostPopularBooks.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Reports\\MostPopularBooks.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\MostPopularBooks.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Reports\\MostPopularBooks.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAmwHYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T10:19:49.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAKQBAAAAAAAAAAAmwMoBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T10:21:41.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "LibraryManagementSystem\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-16T10:22:08.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MostActiveMembers.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\MostActiveMembers.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Reports\\MostActiveMembers.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\MostActiveMembers.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Reports\\MostActiveMembers.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAmwFcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T10:19:38.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv1gAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:15:56.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Feedback\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Feedback\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Feedback\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Feedback\\Index.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAADwv3IAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:47:01.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MyFeedback.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Feedback\\MyFeedback.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Feedback\\MyFeedback.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Feedback\\MyFeedback.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Feedback\\MyFeedback.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwv0UAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:46:55.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Feedback\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Feedback\\Create.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Feedback\\Create.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Feedback\\Create.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAADwv28AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:46:41.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\FeedbackController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAANgAAAAAAAAAAADwv/4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T09:45:59.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Manage.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowTransaction\\Manage.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\BorrowTransaction\\Manage.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowTransaction\\Manage.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\BorrowTransaction\\Manage.cshtml",
+              "ViewState": "AgIAAKIAAAAAAAAAAADwv8gAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:45:10.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MyFines.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Fine\\MyFines.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Fine\\MyFines.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Fine\\MyFines.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Fine\\MyFines.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAADwv1YAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:43:11.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Fine\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Fine\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Fine\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Fine\\Index.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwv40AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:43:03.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Book\\Details.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Details.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Book\\Details.cshtml",
+              "ViewState": "AgIAABABAAAAAAAAAADwvzMBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T08:59:46.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FineController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\FineController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\FineController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\FineController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\FineController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv2sAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T09:42:06.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reservation\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Reservation\\Create.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reservation\\Create.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Reservation\\Create.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAADwv1EAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:37:55.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reservation\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Reservation\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reservation\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Reservation\\Index.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAADwv4kAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:37:48.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\ReservationController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\ReservationController.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAADwv90AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T09:37:13.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowTransaction\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\BorrowTransaction\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowTransaction\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\BorrowTransaction\\Index.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwv4EAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:36:25.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowTransaction\\History.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\BorrowTransaction\\History.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowTransaction\\History.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\BorrowTransaction\\History.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAADwv1EAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:36:16.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BorrowTransactionController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\BorrowTransactionController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\BorrowTransactionController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\BorrowTransactionController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\BorrowTransactionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T09:30:40.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BorrowingService.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Services\\BorrowingService.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Services\\BorrowingService.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Services\\BorrowingService.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Services\\BorrowingService.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAuwLsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T09:28:53.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowingConfig\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\BorrowingConfig\\Edit.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowingConfig\\Edit.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\BorrowingConfig\\Edit.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAADwv3AAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:24:05.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BorrowingConfigController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\BorrowingConfigController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\BorrowingConfigController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\BorrowingConfigController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\BorrowingConfigController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAADwv3sAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T09:23:02.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Book\\Delete.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Delete.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Book\\Delete.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvyUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:00:25.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Book\\Edit.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Edit.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Book\\Edit.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAADwv6cAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:00:12.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Book\\Create.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Create.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Book\\Create.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwv40AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T08:59:58.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Book\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Book\\Index.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAADwv6UAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T08:59:33.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowingConfig\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\BorrowingConfig\\Create.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowingConfig\\Create.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\BorrowingConfig\\Create.cshtml",
+              "ViewState": "AgIAAFUAAAAAAAAAAADwv3sAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:23:48.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Program.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T20:48:27.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowingConfig\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\BorrowingConfig\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\BorrowingConfig\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\BorrowingConfig\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAADwv0sAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T09:23:54.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Library\\Delete.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Delete.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Library\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T08:56:34.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Library\\Edit.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Edit.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Library\\Edit.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwv0QAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T08:56:20.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Library\\Create.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Create.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Library\\Create.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAADwv0IAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T08:56:08.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Library\\Details.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Details.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Library\\Details.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvzYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T08:55:55.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Library\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Library\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Library\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwD0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T08:55:36.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Librarian\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Librarian\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Librarian\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Librarian\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T21:43:28.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Member\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Member\\Index.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Member\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Member\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T21:42:47.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "LibrarianController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\LibrarianController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\LibrarianController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\LibrarianController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\LibrarianController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAADwv48AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T21:42:06.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "MemberController.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\MemberController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\MemberController.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\MemberController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\MemberController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T21:41:42.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RegisterMember.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\RegisterMember.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Account\\RegisterMember.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\RegisterMember.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Account\\RegisterMember.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAADwv04AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T21:39:30.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwD8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T21:36:35.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20260915213120_AddIdentityLinks.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915213120_AddIdentityLinks.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Migrations\\20260915213120_AddIdentityLinks.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915213120_AddIdentityLinks.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Migrations\\20260915213120_AddIdentityLinks.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T21:31:20.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20260915212726_AddIdentityLinks.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Migrations\\20260915212726_AddIdentityLinks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T21:27:26.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Feedback.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Feedback.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T20:56:51.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Fine.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Fine.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Fine.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Fine.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\Fine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T20:56:29.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "BorrowTransaction.cs",
+              "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\BorrowTransaction.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\BorrowTransaction.cs",
+              "ToolTip": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\BorrowTransaction.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\BorrowTransaction.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T20:55:39.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
               "Title": "Reservation.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Reservation.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Reservation.cs",
@@ -326,12 +1013,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\Models\\Reservation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:56:09.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T20:56:09.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 58,
               "Title": "Member.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Member.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Member.cs",
@@ -339,12 +1025,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\Models\\Member.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:54:26.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T20:54:26.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 59,
               "Title": "Librarian.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Librarian.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Librarian.cs",
@@ -352,12 +1037,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\Models\\Librarian.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:54:06.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T20:54:06.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 60,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\ApplicationUser.cs",
@@ -365,12 +1049,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:47:10.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T20:47:10.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 61,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\ApplicationDbContext.cs",
@@ -378,12 +1061,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAG4AAAAAAAAAAADwv4UAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:48:05.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T20:48:05.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 62,
               "Title": "BorrowingConfig.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\BorrowingConfig.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\BorrowingConfig.cs",
@@ -391,12 +1073,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\Models\\BorrowingConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:55:19.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T20:55:19.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 63,
               "Title": "Book.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Book.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Book.cs",
@@ -404,12 +1085,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:54:44.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T20:54:44.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 64,
               "Title": "Library.cs",
               "DocumentMoniker": "D:\\Project \u0026 Assignment\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Library.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Library.cs",
@@ -417,8 +1097,7 @@
               "RelativeToolTip": "LibraryManagementSystem\\Models\\Library.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T20:50:25.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T20:50:25.722Z"
             }
           ]
         }

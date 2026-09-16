@@ -1,49 +1,459 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LibraryManagementSystem</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/LibraryManagementSystem.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LibraryManagementSystem</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - LibraryManagementSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        @ViewData["Title"] - Library Management System
+    </title>
+
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+</head>
+
+<body>
+
+    <!-- ========================================== -->
+    <!-- NAVBAR -->
+    <!-- ========================================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold"
+                   asp-controller="Home"
+                   asp-action="Index">
+
+                    📚 LibraryMS
+
+                </a>
+
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse"
+                     id="mainNavbar">
+
+                    <!-- LEFT NAVIGATION -->
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!-- Everyone -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Index">
+
+                                Home
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               asp-controller="Book"
+                               asp-action="Index">
+
+                                Books
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- MEMBER -->
+
+                        @if (User.Identity?.IsAuthenticated == true &&
+                             User.IsInRole("Member"))
+                        {
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                   asp-controller="BorrowTransaction"
+                                   asp-action="Index">
+
+                                    My Borrowings
+
+                                </a>
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                   asp-controller="Reservation"
+                                   asp-action="Index">
+
+                                    My Reservations
+
+                                </a>
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                   asp-controller="Fine"
+                                   asp-action="MyFines">
+
+                                    My Fines
+
+                                </a>
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                   asp-controller="Feedback"
+                                   asp-action="MyFeedback">
+
+                                    My Feedback
+
+                                </a>
+
+                            </li>
+                        }
+
+
+                        <!-- LIBRARIAN -->
+
+                        @if (User.Identity?.IsAuthenticated == true &&
+                             User.IsInRole("Librarian"))
+                        {
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle"
+                                   href="#"
+                                   role="button"
+                                   data-bs-toggle="dropdown">
+
+                                    Management
+
+                                </a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="Library"
+                                           asp-action="Index">
+
+                                            Libraries
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="Book"
+                                           asp-action="Index">
+
+                                            Book Catalogue
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="BorrowingConfig"
+                                           asp-action="Index">
+
+                                            Borrowing Configuration
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="BorrowTransaction"
+                                           asp-action="Manage">
+
+                                            Transactions
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="Fine"
+                                           asp-action="Index">
+
+                                            Fines
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="Feedback"
+                                           asp-action="Index">
+
+                                            Feedback
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <hr class="dropdown-divider" />
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="Reports"
+                                           asp-action="Index">
+
+                                            📊 Reports
+
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        }
+
+                    </ul>
+
+
+                    <!-- RIGHT NAVIGATION -->
+
+                    <ul class="navbar-nav">
+
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle"
+                                   href="#"
+                                   role="button"
+                                   data-bs-toggle="dropdown">
+
+                                    👤
+                                    @User.Identity.Name
+
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end">
+
+                                    <li>
+
+                                        <span class="dropdown-item-text">
+
+                                            Logged in as:
+
+                                            <strong>
+                                                @if (User.IsInRole("Librarian"))
+                                                {
+                                                    <span>Librarian</span>
+                                                }
+                                                else if (User.IsInRole("Member"))
+                                                {
+                                                    <span>Member</span>
+                                                }
+                                            </strong>
+
+                                        </span>
+
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+
+                                    <li>
+
+                                        <form asp-controller="Account"
+                                              asp-action="Logout"
+                                              method="post">
+
+                                            <button type="submit"
+                                                    class="dropdown-item">
+
+                                                🚪 Logout
+
+                                            </button>
+
+                                        </form>
+
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                   asp-controller="Account"
+                                   asp-action="Login">
+
+                                    Login
+
+                                </a>
+
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle"
+                                   href="#"
+                                   role="button"
+                                   data-bs-toggle="dropdown">
+
+                                    Register
+
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end">
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="Account"
+                                           asp-action="RegisterMember">
+
+                                            Register as Member
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a class="dropdown-item"
+                                           asp-controller="Account"
+                                           asp-action="RegisterLibrarian">
+
+                                            Register as Librarian
+
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        }
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================================== -->
+
+    <main>
+
+        @RenderBody()
+
+    </main>
+
+
+    <!-- ========================================== -->
+    <!-- FOOTER -->
+    <!-- ========================================== -->
+
+    <footer class="border-top footer">
+
+        <div class="container text-center py-3">
+
+            <span>
+                © @DateTime.Now.Year
+                Library Management System
+            </span>
+
+            <span class="mx-2">
+                |
+            </span>
+
+            <span>
+                ASP.NET Core MVC
+            </span>
+
         </div>
+
     </footer>
+
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS -->
+    <!-- ========================================== -->
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    <script src="~/js/site.js"
+            asp-append-version="true"></script>
+
+    @await RenderSectionAsync(
+        "Scripts",
+        required: false)
+
 </body>
+
 </html>

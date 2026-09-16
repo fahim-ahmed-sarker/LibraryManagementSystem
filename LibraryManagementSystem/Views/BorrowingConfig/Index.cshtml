@@ -1,0 +1,76 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.BorrowingConfig>
+
+@{
+    ViewData["Title"] = "Borrowing Configuration";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h1>Borrowing Configuration</h1>
+
+        <a asp-action="Create"
+           class="btn btn-primary">
+            Add Configuration
+        </a>
+
+    </div>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+            <tr>
+                <th>Library</th>
+                <th>Loan Duration</th>
+                <th>Renewal Limit</th>
+                <th>Penalty / Day</th>
+                <th>Maximum Borrowable</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var config in Model)
+            {
+                <tr>
+
+                    <td>
+                        @config.Library?.Name
+                    </td>
+
+                    <td>
+                        @config.LoanDurationDays days
+                    </td>
+
+                    <td>
+                        @config.RenewalLimit
+                    </td>
+
+                    <td>
+                        @config.OverduePenaltyPerDay.ToString("C")
+                    </td>
+
+                    <td>
+                        @config.MaxBorrowableItems
+                    </td>
+
+                    <td>
+
+                        <a asp-action="Edit"
+                           asp-route-id="@config.ConfigID"
+                           class="btn btn-sm btn-warning">
+                            Edit
+                        </a>
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

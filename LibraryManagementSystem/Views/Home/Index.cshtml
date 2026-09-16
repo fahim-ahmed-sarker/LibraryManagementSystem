@@ -1,8 +1,529 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
+
+    var newArrivals =
+        ViewBag.NewArrivals
+        as List<LibraryManagementSystem.Models.Book>
+        ?? new List<LibraryManagementSystem.Models.Book>();
+
+    var mostBorrowed =
+        ViewBag.MostBorrowed
+        as List<LibraryManagementSystem.Models.Book>
+        ?? new List<LibraryManagementSystem.Models.Book>();
+
+    var availableBooks =
+        ViewBag.AvailableBooks
+        as List<LibraryManagementSystem.Models.Book>
+        ?? new List<LibraryManagementSystem.Models.Book>();
+
+    var recommendedBooks =
+        ViewBag.RecommendedBooks
+        as List<LibraryManagementSystem.Models.Book>
+        ?? new List<LibraryManagementSystem.Models.Book>();
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<!-- ========================================== -->
+<!-- HERO SECTION -->
+<!-- ========================================== -->
+
+<div class="bg-dark text-white py-5 mb-5">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-8">
+
+                <h1 class="display-4 fw-bold">
+                    Library Management System
+                </h1>
+
+                <p class="lead">
+                    Discover books, borrow your favourites,
+                    reserve unavailable books and manage
+                    your reading history.
+                </p>
+
+                <a asp-controller="Book"
+                   asp-action="Index"
+                   class="btn btn-light btn-lg">
+                    Browse Books
+                </a>
+
+            </div>
+
+            <div class="col-md-4 text-center">
+
+                <div class="display-1">
+                    📚
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container">
+
+
+    <!-- ========================================== -->
+    <!-- NEW ARRIVALS -->
+    <!-- ========================================== -->
+
+    <section class="mb-5">
+
+        <div class="d-flex justify-content-between
+                    align-items-center mb-3">
+
+            <h2>
+                🆕 New Arrivals
+            </h2>
+
+            <a asp-controller="Book"
+               asp-action="Index"
+               class="btn btn-outline-primary">
+                View All
+            </a>
+
+        </div>
+
+
+        <div class="row">
+
+            @if (!newArrivals.Any())
+            {
+                <div class="col-12">
+
+                    <div class="alert alert-info">
+                        No books have been added yet.
+                    </div>
+
+                </div>
+            }
+            else
+            {
+                @foreach (var book in newArrivals)
+                {
+                    <div class="col-md-4 col-lg-2 mb-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            @if (!string.IsNullOrEmpty(
+                                book.CoverImageUrl))
+                            {
+                                <img src="@book.CoverImageUrl"
+                                     class="card-img-top"
+                                     style="height:220px;
+                                            object-fit:cover;"
+                                     alt="@book.Title" />
+                            }
+                            else
+                            {
+                                <div class="bg-light text-center
+                                            d-flex align-items-center
+                                            justify-content-center"
+                                     style="height:220px;">
+
+                                    📖
+
+                                </div>
+                            }
+
+                            <div class="card-body">
+
+                                <h6 class="card-title">
+                                    @book.Title
+                                </h6>
+
+                                <small class="text-muted">
+                                    @book.Author
+                                </small>
+
+                            </div>
+
+                            <div class="card-footer bg-white">
+
+                                <a asp-controller="Book"
+                                   asp-action="Details"
+                                   asp-route-id="@book.BookID"
+                                   class="btn btn-sm
+                                          btn-primary w-100">
+                                    Details
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                }
+            }
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- MOST BORROWED -->
+    <!-- ========================================== -->
+
+    <section class="mb-5">
+
+        <div class="d-flex justify-content-between
+                    align-items-center mb-3">
+
+            <h2>
+                🔥 Most Borrowed Books
+            </h2>
+
+        </div>
+
+
+        <div class="row">
+
+            @if (!mostBorrowed.Any())
+            {
+                <div class="col-12">
+
+                    <div class="alert alert-info">
+                        No borrowing data available yet.
+                    </div>
+
+                </div>
+            }
+            else
+            {
+                @foreach (var book in mostBorrowed)
+                {
+                    <div class="col-md-4 col-lg-2 mb-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            @if (!string.IsNullOrEmpty(
+                                book.CoverImageUrl))
+                            {
+                                <img src="@book.CoverImageUrl"
+                                     class="card-img-top"
+                                     style="height:220px;
+                                            object-fit:cover;"
+                                     alt="@book.Title" />
+                            }
+                            else
+                            {
+                                <div class="bg-light text-center
+                                            d-flex align-items-center
+                                            justify-content-center"
+                                     style="height:220px;">
+
+                                    📖
+
+                                </div>
+                            }
+
+                            <div class="card-body">
+
+                                <h6 class="card-title">
+                                    @book.Title
+                                </h6>
+
+                                <small class="text-muted">
+                                    @book.Author
+                                </small>
+
+                            </div>
+
+                            <div class="card-footer bg-white">
+
+                                <a asp-controller="Book"
+                                   asp-action="Details"
+                                   asp-route-id="@book.BookID"
+                                   class="btn btn-sm
+                                          btn-primary w-100">
+                                    Details
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                }
+            }
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- RECOMMENDED -->
+    <!-- ========================================== -->
+
+    <section class="mb-5">
+
+        <h2 class="mb-3">
+            🎯 Recommended Books
+        </h2>
+
+        <div class="row">
+
+            @if (!recommendedBooks.Any())
+            {
+                <div class="col-12">
+
+                    <div class="alert alert-info">
+                        Recommendations will appear here
+                        as books and ratings are added.
+                    </div>
+
+                </div>
+            }
+            else
+            {
+                @foreach (var book in recommendedBooks)
+                {
+                    <div class="col-md-4 col-lg-2 mb-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            @if (!string.IsNullOrEmpty(
+                                book.CoverImageUrl))
+                            {
+                                <img src="@book.CoverImageUrl"
+                                     class="card-img-top"
+                                     style="height:220px;
+                                            object-fit:cover;"
+                                     alt="@book.Title" />
+                            }
+                            else
+                            {
+                                <div class="bg-light text-center
+                                            d-flex align-items-center
+                                            justify-content-center"
+                                     style="height:220px;">
+
+                                    📖
+
+                                </div>
+                            }
+
+                            <div class="card-body">
+
+                                <h6 class="card-title">
+                                    @book.Title
+                                </h6>
+
+                                <small class="text-muted">
+                                    @book.Author
+                                </small>
+
+                                <div class="mt-2">
+                                    ⭐ Recommended
+                                </div>
+
+                            </div>
+
+                            <div class="card-footer bg-white">
+
+                                <a asp-controller="Book"
+                                   asp-action="Details"
+                                   asp-route-id="@book.BookID"
+                                   class="btn btn-sm
+                                          btn-primary w-100">
+                                    Details
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                }
+            }
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- AVAILABLE BOOKS -->
+    <!-- ========================================== -->
+
+    <section class="mb-5">
+
+        <div class="d-flex justify-content-between
+                    align-items-center mb-3">
+
+            <h2>
+                ✅ Currently Available
+            </h2>
+
+            <a asp-controller="Book"
+               asp-action="Index"
+               class="btn btn-outline-success">
+                Browse Catalogue
+            </a>
+
+        </div>
+
+
+        <div class="row">
+
+            @if (!availableBooks.Any())
+            {
+                <div class="col-12">
+
+                    <div class="alert alert-warning">
+                        No books are currently available.
+                    </div>
+
+                </div>
+            }
+            else
+            {
+                @foreach (var book in availableBooks)
+                {
+                    <div class="col-md-6 col-lg-4 mb-3">
+
+                        <div class="card shadow-sm">
+
+                            <div class="card-body">
+
+                                <h5>
+                                    @book.Title
+                                </h5>
+
+                                <p class="mb-1">
+                                    <strong>Author:</strong>
+                                    @book.Author
+                                </p>
+
+                                <p class="mb-2">
+                                    <strong>Genre:</strong>
+                                    @book.Genre
+                                </p>
+
+                                <span class="badge bg-success">
+                                    Available
+                                </span>
+
+                                <a asp-controller="Book"
+                                   asp-action="Details"
+                                   asp-route-id="@book.BookID"
+                                   class="btn btn-sm
+                                          btn-outline-primary
+                                          float-end">
+                                    Details
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                }
+            }
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- GROUP DETAILS -->
+    <!-- ========================================== -->
+
+    <section class="mb-5">
+
+        <h2 class="mb-3">
+            👥 Group Details
+        </h2>
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered
+                          table-striped">
+
+                <thead class="table-dark">
+
+                    <tr>
+                        <th>
+                            Student ID
+                        </th>
+
+                        <th>
+                            Full Name
+                        </th>
+
+                        <th>
+                            Responsibility
+                        </th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>
+                            61647
+                        </td>
+
+                        <td>
+                            Mainur Rashid Masum
+                        </td>
+
+                        <td>
+                            Admin / Catalogue
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            STUDENT-ID-2
+                        </td>
+
+                        <td>
+                            MEMBER-NAME-2
+                        </td>
+
+                        <td>
+                            Borrowing Engine
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            STUDENT-ID-3
+                        </td>
+
+                        <td>
+                            MEMBER-NAME-3
+                        </td>
+
+                        <td>
+                            Feedback / Reports / Access
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="alert alert-warning">
+            Replace the sample student information above
+            with your actual group members before submission.
+        </div>
+
+    </section>
+
 </div>

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Feedback>
+
+@{
+    ViewData["Title"] = "My Feedback";
+}
+
+<div class="container mt-4">
+
+    <h1 class="mb-4">
+        My Feedback
+    </h1>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            You have not submitted any feedback yet.
+        </div>
+    }
+    else
+    {
+        @foreach (var feedback in Model)
+        {
+            <div class="card mb-3 shadow-sm">
+
+                <div class="card-body">
+
+                    <h5>
+                        @feedback.Book?.Title
+                    </h5>
+
+                    <div class="mb-2">
+
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (i <= feedback.Rating)
+                            {
+                                <span>⭐</span>
+                            }
+                            else
+                            {
+                                <span>☆</span>
+                            }
+                        }
+
+                        <span class="ms-2">
+                            (@feedback.Rating/5)
+                        </span>
+
+                    </div>
+
+                    @if (!string.IsNullOrWhiteSpace(feedback.Comment))
+                    {
+                        <p>
+                            @feedback.Comment
+                        </p>
+                    }
+
+                    <small class="text-muted">
+                        Submitted:
+                        @feedback.DateSubmitted
+                        .ToString("dd MMM yyyy HH:mm")
+                    </small>
+
+                </div>
+
+            </div>
+        }
+    }
+
+</div>

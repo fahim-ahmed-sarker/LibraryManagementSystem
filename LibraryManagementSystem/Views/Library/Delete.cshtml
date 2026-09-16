@@ -1,0 +1,33 @@
+﻿@model LibraryManagementSystem.Models.Library
+
+@{
+    ViewData["Title"] = "Delete Library";
+}
+
+<div class="container mt-4">
+
+    <h1>Delete Library</h1>
+
+    <div class="alert alert-danger">
+        Are you sure you want to delete
+        <strong>@Model.Name</strong>?
+    </div>
+
+    <form asp-action="Delete" method="post">
+
+        <input type="hidden"
+               asp-for="LibraryID" />
+
+        <button type="submit"
+                class="btn btn-danger">
+            Delete
+        </button>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>

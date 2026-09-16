@@ -1,22 +1,210 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+
+.navbar {
+    min-height: 64px;
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+    letter-spacing: 0.3px;
+}
+
+.navbar .nav-link {
+    transition: opacity 0.2s ease;
+}
+
+    .navbar .nav-link:hover {
+        opacity: 0.8;
+    }
+
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+
+main {
+    min-height: calc(100vh - 130px);
+}
+
+
+/* ==========================================
+   CARDS
+   ========================================== */
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+    .card.shadow,
+    .card.shadow-sm {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        .card.shadow:hover,
+        .card.shadow-sm:hover {
+            transform: translateY(-3px);
+        }
+
+
+/* ==========================================
+   BOOK CARDS
+   ========================================== */
+
+.book-card {
+    height: 100%;
+    overflow: hidden;
+}
+
+    .book-card img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.btn {
+    border-radius: 7px;
+}
+
+
+/* ==========================================
+   TABLES
+   ========================================== */
+
+.table {
+    vertical-align: middle;
+}
+
+    .table thead th {
+        white-space: nowrap;
+    }
+
+
+/* ==========================================
+   FORMS
+   ========================================== */
+
+.form-control,
+.form-select {
+    border-radius: 7px;
+    padding: 0.65rem 0.75rem;
+}
+
+    .form-control:focus,
+    .form-select:focus {
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+    }
+
+
+/* ==========================================
+   BADGES
+   ========================================== */
+
+.badge {
+    font-weight: 500;
+}
+
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+.hero-section {
+    padding: 80px 0;
+}
+
+
+/* ==========================================
+   ALERTS
+   ========================================== */
+
+.alert {
+    border-radius: 8px;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.footer {
+    background-color: #ffffff;
+    color: #6c757d;
+    margin-top: 50px;
+}
+
+
+/* ==========================================
+   BOOK DETAILS
+   ========================================== */
+
+.book-cover-large {
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   REPORT CARDS
+   ========================================== */
+
+.report-card {
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .report-card:hover {
+        transform: translateY(-4px);
+    }
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 767px) {
+
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .book-card img {
+        height: 200px;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
 }

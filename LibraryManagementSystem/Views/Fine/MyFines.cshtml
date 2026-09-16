@@ -1,0 +1,87 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Fine>
+
+@{
+    ViewData["Title"] = "My Fines";
+}
+
+<div class="container mt-4">
+
+    <h1 class="mb-4">
+        My Fines
+    </h1>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-success">
+            You currently have no fines.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-striped">
+
+                <thead>
+                    <tr>
+                        <th>Book</th>
+                        <th>Due Date</th>
+                        <th>Fine Amount</th>
+                        <th>Status</th>
+                        <th>Paid Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var fine in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                @fine.Transaction?.Book?.Title
+                            </td>
+
+                            <td>
+                                @fine.Transaction?.DueDate
+                                .ToString("dd MMM yyyy")
+                            </td>
+
+                            <td>
+                                <strong>
+                                    @fine.Amount.ToString("C")
+                                </strong>
+                            </td>
+
+                            <td>
+
+                                @if (fine.IsPaid)
+                                {
+                                    <span class="badge bg-success">
+                                        Paid
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">
+                                        Unpaid
+                                    </span>
+                                }
+
+                            </td>
+
+                            <td>
+                                @(fine.PaidDate?.ToString("dd MMM yyyy") ?? "-")
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    }
+
+</div>

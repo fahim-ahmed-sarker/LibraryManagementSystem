@@ -1,0 +1,113 @@
+﻿@model LibraryManagementSystem.Models.BorrowingConfig
+
+@{
+    ViewData["Title"] = "Edit Borrowing Configuration";
+}
+
+<div class="container mt-4">
+
+    <h1>Edit Borrowing Configuration</h1>
+
+    <form asp-action="Edit" method="post">
+
+        <input type="hidden"
+               asp-for="ConfigID" />
+
+        <input type="hidden"
+               asp-for="LibraryID" />
+
+        <div asp-validation-summary="ModelOnly"
+             class="text-danger mb-3">
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Library
+            </label>
+
+            <input class="form-control"
+                   value="@Model.Library?.Name"
+                   readonly />
+
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="LoanDurationDays"
+                   class="form-label">
+            </label>
+
+            <input asp-for="LoanDurationDays"
+                   class="form-control" />
+
+            <span asp-validation-for="LoanDurationDays"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="RenewalLimit"
+                   class="form-label">
+            </label>
+
+            <input asp-for="RenewalLimit"
+                   class="form-control" />
+
+            <span asp-validation-for="RenewalLimit"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="OverduePenaltyPerDay"
+                   class="form-label">
+            </label>
+
+            <input asp-for="OverduePenaltyPerDay"
+                   class="form-control"
+                   type="number"
+                   step="0.01" />
+
+            <span asp-validation-for="OverduePenaltyPerDay"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="MaxBorrowableItems"
+                   class="form-label">
+            </label>
+
+            <input asp-for="MaxBorrowableItems"
+                   class="form-control" />
+
+            <span asp-validation-for="MaxBorrowableItems"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+        <button type="submit"
+                class="btn btn-success">
+            Save Changes
+        </button>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

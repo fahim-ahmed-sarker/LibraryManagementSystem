@@ -1,0 +1,55 @@
+﻿@model LibraryManagementSystem.Models.Library
+
+@{
+    ViewData["Title"] = "Library Details";
+}
+
+<div class="container mt-4">
+
+    <h1>@Model.Name</h1>
+
+    <dl class="row">
+
+        <dt class="col-sm-3">Location</dt>
+        <dd class="col-sm-9">@Model.Location</dd>
+
+        <dt class="col-sm-3">Operating Hours</dt>
+        <dd class="col-sm-9">@Model.OperatingHours</dd>
+
+        <dt class="col-sm-3">Contact</dt>
+        <dd class="col-sm-9">@Model.ContactDetails</dd>
+
+    </dl>
+
+    <hr />
+
+    <h3>Books</h3>
+
+    @if (Model.Books.Any())
+    {
+        <ul>
+            @foreach (var book in Model.Books)
+            {
+                <li>
+                    @book.Title — @book.Author
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No books have been added yet.</p>
+    }
+
+    <a asp-action="Edit"
+       asp-route-id="@Model.LibraryID"
+       class="btn btn-warning">
+        Edit
+    </a>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Back
+    </a>
+
+</div>

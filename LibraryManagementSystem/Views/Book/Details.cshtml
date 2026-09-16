@@ -1,0 +1,308 @@
+﻿@model LibraryManagementSystem.Models.Book
+
+@{
+    ViewData["Title"] = "Book Details";
+
+    var feedbacks = Model.Feedbacks
+        .OrderByDescending(f => f.DateSubmitted)
+        .ToList();
+
+    double averageRating = feedbacks.Any()
+        ? feedbacks.Average(f => f.Rating)
+        : 0;
+}
+
+<div class="container mt-4">
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    <!-- BOOK INFORMATION -->
+
+    <div class="row">
+
+        <!-- COVER -->
+
+        <div class="col-md-4">
+
+            @if (!string.IsNullOrEmpty(Model.CoverImageUrl))
+            {
+                <img src="@Model.CoverImageUrl"
+                     class="img-fluid rounded shadow"
+                     alt="@Model.Title" />
+            }
+            else
+            {
+                <div class="bg-light p-5 text-center rounded">
+                    No Cover Image
+                </div>
+            }
+
+        </div>
+
+
+        <!-- INFORMATION -->
+
+        <div class="col-md-8">
+
+            <h1>
+                @Model.Title
+            </h1>
+
+            <hr />
+
+            <p>
+                <strong>Author:</strong>
+                @Model.Author
+            </p>
+
+            <p>
+                <strong>Genre:</strong>
+                @Model.Genre
+            </p>
+
+            <p>
+                <strong>ISBN:</strong>
+                @Model.ISBN
+            </p>
+
+            <p>
+                <strong>Library:</strong>
+                @Model.Library?.Name
+            </p>
+
+            <p>
+
+                <strong>Availability:</strong>
+
+                @if (Model.AvailabilityStatus == "Available")
+                {
+                    <span class="badge bg-success">
+                        Available
+                    </span>
+                }
+                else if (Model.AvailabilityStatus == "Borrowed")
+                {
+                    <span class="badge bg-warning text-dark">
+                        Borrowed
+                    </span>
+                }
+                else if (Model.AvailabilityStatus == "Reserved")
+                {
+                    <span class="badge bg-info text-dark">
+                        Reserved
+                    </span>
+                }
+                else if (Model.AvailabilityStatus == "Overdue")
+                {
+                    <span class="badge bg-danger">
+                        Overdue
+                    </span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">
+                        @Model.AvailabilityStatus
+                    </span>
+                }
+
+            </p>
+
+            <h4 class="mt-4">
+                Summary
+            </h4>
+
+            <p>
+                @Model.Summary
+            </p>
+
+
+            <!-- ACTIONS -->
+
+            <div class="mt-4">
+
+                @if (User.IsInRole("Member") &&
+                     Model.AvailabilityStatus == "Available")
+                {
+                    <form asp-controller="BorrowTransaction"
+                          asp-action="Borrow"
+                          method="post"
+                          class="d-inline">
+
+                        <input type="hidden"
+                               name="bookId"
+                               value="@Model.BookID" />
+
+                        <button type="submit"
+                                class="btn btn-success">
+                            Borrow Book
+                        </button>
+
+                    </form>
+                }
+
+
+                @if (User.IsInRole("Member") &&
+                     Model.AvailabilityStatus != "Available")
+                {
+                    <a asp-controller="Reservation"
+                       asp-action="Create"
+                       asp-route-bookId="@Model.BookID"
+                       class="btn btn-info">
+                        Reserve Book
+                    </a>
+                }
+
+
+                @if (User.IsInRole("Librarian"))
+                {
+                    <a asp-action="Edit"
+                       asp-route-id="@Model.BookID"
+                       class="btn btn-warning">
+                        Edit
+                    </a>
+                }
+
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+                    Back to Catalogue
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RATING SUMMARY -->
+
+    <div class="mt-5">
+
+        <h2>
+            Ratings & Reviews
+        </h2>
+
+        <hr />
+
+        @if (feedbacks.Any())
+        {
+            <div class="card mb-4">
+
+                <div class="card-body text-center">
+
+                    <h2>
+                        @averageRating.ToString("0.0") / 5
+                    </h2>
+
+                    <div class="fs-3">
+
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (i <= Math.Round(averageRating))
+                            {
+                                <span>⭐</span>
+                            }
+                            else
+                            {
+                                <span>☆</span>
+                            }
+                        }
+
+                    </div>
+
+                    <p class="text-muted">
+                        Based on @feedbacks.Count review(s)
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- REVIEWS -->
+            @foreach (var feedback in feedbacks)
+            {
+                <div class="card mb-3">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <strong>
+                                @feedback.Member?.Name
+                            </strong>
+
+                            <small class="text-muted">
+                                @feedback.DateSubmitted
+                                .ToString("dd MMM yyyy")
+                            </small>
+
+                        </div>
+
+                        <div class="mt-2">
+
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (i <= feedback.Rating)
+                                {
+                                    <span>⭐</span>
+                                }
+                                else
+                                {
+                                    <span>☆</span>
+                                }
+                            }
+
+                        </div>
+
+                        @if (!string.IsNullOrWhiteSpace(feedback.Comment))
+                        {
+                            <p class="mt-2 mb-0">
+                                @feedback.Comment
+                            </p>
+                        }
+
+                    </div>
+
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-info">
+                No reviews have been submitted for this book yet.
+            </div>
+        }
+
+    </div>
+
+
+    <!-- MEMBER FEEDBACK BUTTON -->
+    @if (User.IsInRole("Member"))
+    {
+        <div class="mt-4 mb-5">
+
+            <a asp-controller="Feedback"
+               asp-action="Create"
+               asp-route-bookId="@Model.BookID"
+               class="btn btn-primary">
+                ⭐ Give Feedback
+            </a>
+
+        </div>
+    }
+
+</div>

@@ -1,5 +1,6 @@
 using LibraryManagementSystem.Data;
 using LibraryManagementSystem.Models;
+using LibraryManagementSystem.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,6 +29,7 @@ builder.Services
 
 // MVC
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<BorrowingService>();
 
 var app = builder.Build();
 

@@ -1,0 +1,130 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.BorrowTransaction>
+
+@{
+    ViewData["Title"] = "My Borrowed Books";
+}
+
+<div class="container mt-4">
+
+    <h1>My Borrowed Books</h1>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            You currently have no borrowed books.
+        </div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+
+            <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Borrow Date</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Renewals</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @foreach (var transaction in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @transaction.Book?.Title
+                        </td>
+
+                        <td>
+                            @transaction.BorrowDate.ToString("dd MMM yyyy")
+                        </td>
+
+                        <td>
+                            @transaction.DueDate.ToString("dd MMM yyyy")
+                        </td>
+
+                        <td>
+                            @if (transaction.Status == "Overdue")
+                            {
+                                <span class="badge bg-danger">
+                                    Overdue
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-primary">
+                                    Borrowed
+                                </span>
+                            }
+                        </td>
+
+                        <td>
+                            @transaction.RenewalCount
+                        </td>
+
+                        <td>
+
+                            <form asp-action="Renew"
+                                  method="post"
+                                  class="d-inline">
+
+                                <input type="hidden"
+                                       name="transactionId"
+                                       value="@transaction.TransactionID" />
+
+                                <button type="submit"
+                                        class="btn btn-sm btn-warning">
+                                    Renew
+                                </button>
+
+                            </form>
+
+                            <form asp-action="Return"
+                                  method="post"
+                                  class="d-inline">
+
+                                <input type="hidden"
+                                       name="transactionId"
+                                       value="@transaction.TransactionID" />
+
+                                <button type="submit"
+                                        class="btn btn-sm btn-success">
+                                    Return
+                                </button>
+
+                            </form>
+
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+    }
+
+    <a asp-action="History"
+       class="btn btn-outline-primary">
+        Borrowing History
+    </a>
+
+</div>

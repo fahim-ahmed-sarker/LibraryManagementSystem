@@ -1,0 +1,54 @@
+﻿@model LibraryManagementSystem.Models.Book
+
+@{
+    ViewData["Title"] = "Delete Book";
+}
+
+<div class="container mt-4">
+
+    <h1>Delete Book</h1>
+
+    <div class="alert alert-danger">
+        Are you sure you want to delete
+        <strong>@Model.Title</strong>?
+    </div>
+
+    <dl class="row">
+
+        <dt class="col-sm-3">
+            Author
+        </dt>
+
+        <dd class="col-sm-9">
+            @Model.Author
+        </dd>
+
+        <dt class="col-sm-3">
+            ISBN
+        </dt>
+
+        <dd class="col-sm-9">
+            @Model.ISBN
+        </dd>
+
+    </dl>
+
+    <form asp-action="Delete"
+          method="post">
+
+        <input type="hidden"
+               asp-for="BookID" />
+
+        <button type="submit"
+                class="btn btn-danger">
+            Delete
+        </button>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>
