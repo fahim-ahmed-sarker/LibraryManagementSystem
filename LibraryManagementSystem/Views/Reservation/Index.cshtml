@@ -115,6 +115,24 @@
                                 </form>
                             }
 
+                            @if (reservation.Status == "Ready")
+                            {
+                                <form asp-action="Fulfil"
+                                      method="post"
+                                      class="d-inline">
+
+                                    <input type="hidden"
+                                           name="reservationId"
+                                           value="@reservation.ReservationID" />
+
+                                    <button type="submit"
+                                            class="btn btn-sm btn-success">
+                                        Borrow Book
+                                    </button>
+
+                                </form>
+                            }
+
                             @if (reservation.Book != null)
                             {
                                 <a asp-controller="Book"

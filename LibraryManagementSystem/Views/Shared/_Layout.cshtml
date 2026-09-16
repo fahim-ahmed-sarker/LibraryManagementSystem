@@ -1,6 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
+@using Microsoft.EntityFrameworkCore
+@inject LibraryManagementSystem.Data.ApplicationDbContext DbContext
+
 <head>
 
     <meta charset="utf-8" />
@@ -29,7 +32,7 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark site-nav shadow-sm">
 
             <div class="container">
 
@@ -374,17 +377,21 @@
 
                                     </li>
 
-                                    <li>
+                                    @if (!await DbContext.Librarians.AnyAsync() ||
+                                         User.IsInRole("Librarian"))
+                                    {
+                                        <li>
 
-                                        <a class="dropdown-item"
-                                           asp-controller="Account"
-                                           asp-action="RegisterLibrarian">
+                                            <a class="dropdown-item"
+                                               asp-controller="Account"
+                                               asp-action="RegisterLibrarian">
 
-                                            Register as Librarian
+                                                Register as Librarian
 
-                                        </a>
+                                            </a>
 
-                                    </li>
+                                        </li>
+                                    }
 
                                 </ul>
 
@@ -406,7 +413,7 @@
     <!-- MAIN CONTENT -->
     <!-- ========================================== -->
 
-    <main>
+    <main class="site-main">
 
         @RenderBody()
 
@@ -417,7 +424,7 @@
     <!-- FOOTER -->
     <!-- ========================================== -->
 
-    <footer class="border-top footer">
+    <footer class="border-top footer site-footer">
 
         <div class="container text-center py-3">
 

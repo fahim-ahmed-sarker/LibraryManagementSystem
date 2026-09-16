@@ -1,5 +1,6 @@
 ﻿using LibraryManagementSystem.Data;
 using LibraryManagementSystem.Models;
+using LibraryManagementSystem.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,13 +13,16 @@ namespace LibraryManagementSystem.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly BorrowingService _borrowingService;
 
         public ReservationController(
             ApplicationDbContext context,
-            UserManager<ApplicationUser> userManager)
+            UserManager<ApplicationUser> userManager,
+            BorrowingService borrowingService)
         {
             _context = context;
             _userManager = userManager;
+            _borrowingService = borrowingService;
         }
 
         // ==========================================
@@ -156,6 +160,23 @@ namespace LibraryManagementSystem.Controllers
 
             TempData["Success"] =
                 "Book reserved successfully.";
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Fulfil(int reservationId)
+        {
+            var member = await GetCurrentMemberAsync();
+
+            if (member == null)
+                return NotFound("Member profile not found.");
+
+            var result = await _borrowingService
+                .FulfilReservationAsync(member.MemberID, reservationId);
+
+            TempData[result.Success ? "Success" : "Error"] = result.Message;
 
             return RedirectToAction(nameof(Index));
         }

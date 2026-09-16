@@ -88,6 +88,7 @@
                         <th>Status</th>
                         <th>Renewals</th>
                         <th>Fine</th>
+                        <th>Actions</th>
                     </tr>
 
                 </thead>
@@ -186,6 +187,26 @@
                                     </span>
                                 }
 
+                            </td>
+
+                            <td>
+                                @if (transaction.Status == "Borrowed" ||
+                                     transaction.Status == "Overdue")
+                                {
+                                    <form asp-action="ReturnForLibrarian"
+                                          method="post">
+
+                                        <input type="hidden"
+                                               name="transactionId"
+                                               value="@transaction.TransactionID" />
+
+                                        <button type="submit"
+                                                class="btn btn-sm btn-success">
+                                            Mark Returned
+                                        </button>
+
+                                    </form>
+                                }
                             </td>
 
                         </tr>

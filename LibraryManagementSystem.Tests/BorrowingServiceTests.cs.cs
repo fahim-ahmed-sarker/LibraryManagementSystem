@@ -524,5 +524,104 @@ namespace LibraryManagementSystem.Tests
                 "Renewal limit",
                 result.Message);
         }
+
+
+        [Fact]
+        public async Task ReturnBookForLibrarian_BorrowedBook_ShouldSucceed()
+        {
+            using var context = CreateContext();
+
+            var library = new Library { Name = "Test Library" };
+            var member = new Member { Name = "Member" };
+            var book = new Book
+            {
+                Title = "Librarian Return",
+                Author = "Author",
+                Genre = "Fiction",
+                ISBN = "1234567897",
+                Summary = "Summary",
+                AvailabilityStatus = "Borrowed",
+                Library = library
+            };
+
+            context.Libraries.Add(library);
+            context.Members.Add(member);
+            context.Books.Add(book);
+            await context.SaveChangesAsync();
+
+            var transaction = new BorrowTransaction
+            {
+                MemberID = member.MemberID,
+                BookID = book.BookID,
+                BorrowDate = DateTime.Now.AddDays(-1),
+                DueDate = DateTime.Now.AddDays(10),
+                Status = "Borrowed"
+            };
+
+            context.BorrowTransactions.Add(transaction);
+            await context.SaveChangesAsync();
+
+            var service = new BorrowingService(context);
+            var result = await service.ReturnBookForLibrarianAsync(
+                transaction.TransactionID);
+
+            Assert.True(result.Success);
+            Assert.Equal("Returned", transaction.Status);
+            Assert.Equal("Available", book.AvailabilityStatus);
+        }
+
+
+        [Fact]
+        public async Task FulfilReservation_ReadyReservation_ShouldCreateBorrowing()
+        {
+            using var context = CreateContext();
+
+            var library = new Library { Name = "Test Library" };
+            var config = new BorrowingConfig
+            {
+                Library = library,
+                LoanDurationDays = 14,
+                RenewalLimit = 2,
+                OverduePenaltyPerDay = 1,
+                MaxBorrowableItems = 5
+            };
+            var member = new Member { Name = "Member" };
+            var book = new Book
+            {
+                Title = "Reserved Book",
+                Author = "Author",
+                Genre = "Fiction",
+                ISBN = "1234567898",
+                Summary = "Summary",
+                AvailabilityStatus = "Reserved",
+                Library = library
+            };
+
+            context.Libraries.Add(library);
+            context.BorrowingConfigs.Add(config);
+            context.Members.Add(member);
+            context.Books.Add(book);
+            await context.SaveChangesAsync();
+
+            var reservation = new Reservation
+            {
+                MemberID = member.MemberID,
+                BookID = book.BookID,
+                Status = "Ready"
+            };
+
+            context.Reservations.Add(reservation);
+            await context.SaveChangesAsync();
+
+            var service = new BorrowingService(context);
+            var result = await service.FulfilReservationAsync(
+                member.MemberID,
+                reservation.ReservationID);
+
+            Assert.True(result.Success);
+            Assert.Equal("Fulfilled", reservation.Status);
+            Assert.Equal("Borrowed", book.AvailabilityStatus);
+            Assert.Single(context.BorrowTransactions);
+        }
     }
 }

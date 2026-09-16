@@ -8,7 +8,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementSystem.Controllers
 {
-    [Authorize(Roles = "Member")]
     public class BorrowTransactionController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -29,6 +28,7 @@ namespace LibraryManagementSystem.Controllers
         // MY CURRENT BORROWINGS
         // ==========================================
 
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> Index()
         {
             var member = await GetCurrentMemberAsync();
@@ -56,6 +56,7 @@ namespace LibraryManagementSystem.Controllers
         // BORROW
         // ==========================================
 
+        [Authorize(Roles = "Member")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Borrow(int bookId)
@@ -85,6 +86,7 @@ namespace LibraryManagementSystem.Controllers
         // RETURN
         // ==========================================
 
+        [Authorize(Roles = "Member")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Return(
@@ -107,11 +109,25 @@ namespace LibraryManagementSystem.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Librarian")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ReturnForLibrarian(int transactionId)
+        {
+            var result = await _borrowingService
+                .ReturnBookForLibrarianAsync(transactionId);
+
+            TempData[result.Success ? "Success" : "Error"] = result.Message;
+
+            return RedirectToAction(nameof(Manage));
+        }
+
 
         // ==========================================
         // RENEW
         // ==========================================
 
+        [Authorize(Roles = "Member")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Renew(
@@ -139,6 +155,7 @@ namespace LibraryManagementSystem.Controllers
         // BORROWING HISTORY
         // ==========================================
 
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> History()
         {
             var member = await GetCurrentMemberAsync();

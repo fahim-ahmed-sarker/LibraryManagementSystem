@@ -121,6 +121,32 @@ namespace LibraryManagementSystem.Services
                 return (false, "This transaction cannot be returned.");
             }
 
+            return await CompleteReturnAsync(transaction);
+        }
+
+        public async Task<(bool Success, string Message)>
+            ReturnBookForLibrarianAsync(int transactionId)
+        {
+            var transaction = await _context.BorrowTransactions
+                .Include(t => t.Book)
+                .FirstOrDefaultAsync(t =>
+                    t.TransactionID == transactionId);
+
+            if (transaction == null)
+                return (false, "Borrowing transaction not found.");
+
+            if (transaction.Status != "Borrowed" &&
+                transaction.Status != "Overdue")
+            {
+                return (false, "This transaction cannot be returned.");
+            }
+
+            return await CompleteReturnAsync(transaction);
+        }
+
+        private async Task<(bool Success, string Message)>
+            CompleteReturnAsync(BorrowTransaction transaction)
+        {
             transaction.ReturnDate = DateTime.Now;
 
             var overdueDays = Math.Max(
@@ -194,6 +220,74 @@ namespace LibraryManagementSystem.Services
             }
 
             return (true, "Book returned successfully.");
+        }
+
+
+        // ==========================================
+        // FULFIL RESERVATION
+        // ==========================================
+
+        public async Task<(bool Success, string Message)>
+            FulfilReservationAsync(
+                int memberId,
+                int reservationId)
+        {
+            var reservation = await _context.Reservations
+                .Include(r => r.Book)
+                .FirstOrDefaultAsync(r =>
+                    r.ReservationID == reservationId &&
+                    r.MemberID == memberId);
+
+            if (reservation == null)
+                return (false, "Reservation not found.");
+
+            if (reservation.Status != "Ready")
+                return (false, "This reservation is not ready for collection.");
+
+            if (reservation.Book == null ||
+                reservation.Book.AvailabilityStatus != "Reserved")
+            {
+                return (false, "The reserved book is no longer available.");
+            }
+
+            var config = await _context.BorrowingConfigs
+                .FirstOrDefaultAsync(c =>
+                    c.LibraryID == reservation.Book.LibraryID);
+
+            if (config == null)
+                return (false, "Borrowing configuration has not been set for this library.");
+
+            var activeBorrowCount = await _context.BorrowTransactions
+                .CountAsync(t =>
+                    t.MemberID == memberId &&
+                    (t.Status == "Borrowed" ||
+                     t.Status == "Overdue"));
+
+            if (activeBorrowCount >= config.MaxBorrowableItems)
+            {
+                return (
+                    false,
+                    $"You can borrow a maximum of {config.MaxBorrowableItems} items.");
+            }
+
+            var now = DateTime.Now;
+            var transaction = new BorrowTransaction
+            {
+                MemberID = memberId,
+                BookID = reservation.BookID,
+                BorrowDate = now,
+                DueDate = now.AddDays(config.LoanDurationDays),
+                Status = "Borrowed",
+                RenewalCount = 0
+            };
+
+            reservation.Status = "Fulfilled";
+            reservation.Book.AvailabilityStatus = "Borrowed";
+            _context.BorrowTransactions.Add(transaction);
+
+            await _context.SaveChangesAsync();
+
+            return (true, $"Reservation fulfilled. Due date: {transaction.DueDate:d}");
         }
 
 

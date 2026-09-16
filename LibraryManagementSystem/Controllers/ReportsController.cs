@@ -37,7 +37,11 @@ namespace LibraryManagementSystem.Controllers
 
             var overdueBooks =
                 await _context.BorrowTransactions
-                    .CountAsync(t => t.Status == "Overdue");
+                    .CountAsync(t =>
+                        t.Status == "Overdue" ||
+                        (t.Status == "Borrowed" &&
+                         t.ReturnDate == null &&
+                         t.DueDate < DateTime.Now));
 
             var unpaidFines =
                 await _context.Fines

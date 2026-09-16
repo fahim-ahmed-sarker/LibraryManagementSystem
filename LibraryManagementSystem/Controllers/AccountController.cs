@@ -39,6 +39,13 @@ namespace LibraryManagementSystem.Controllers
             return View();
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -210,8 +217,21 @@ namespace LibraryManagementSystem.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public IActionResult RegisterLibrarian()
+        public async Task<IActionResult> RegisterLibrarian()
         {
+            if (await _context.Librarians.AnyAsync() &&
+                !User.IsInRole("Librarian"))
+            {
+                return RedirectToAction(
+                    nameof(Login),
+                    new
+                    {
+                        returnUrl = Url.Action(
+                            nameof(RegisterLibrarian),
+                            "Account")
+                    });
+            }
+
             return View();
         }
 
@@ -222,11 +242,21 @@ namespace LibraryManagementSystem.Controllers
             RegisterViewModel model,
             string librarianCode)
         {
+            var librarianExists = await _context.Librarians.AnyAsync();
+
+            if (librarianExists && !User.IsInRole("Librarian"))
+            {
+                return Forbid();
+            }
+
             var configuredCode =
                 _configuration["LibrarianRegistration:Code"];
 
             if (string.IsNullOrWhiteSpace(librarianCode) ||
-                librarianCode != configuredCode)
+                !string.Equals(
+                    librarianCode.Trim(),
+                    configuredCode,
+                    StringComparison.Ordinal))
             {
                 ModelState.AddModelError(
                     "librarianCode",

@@ -1,209 +1,319 @@
-html {
-    font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+:root {
+    --ink: #1d2a35;
+    --muted: #6b7882;
+    --navy: #173042;
+    --navy-deep: #10232f;
+    --teal: #187c78;
+    --teal-dark: #12625f;
+    --amber: #d99037;
+    --paper: #f5f2ec;
+    --surface: #ffffff;
+    --line: #dfe5e5;
+    --soft-teal: #e7f3f1;
+    --soft-amber: #fff3df;
+    --shadow: 0 12px 30px rgba(29, 42, 53, 0.08);
 }
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
 html {
+    font-size: 15px;
     position: relative;
     min-height: 100%;
 }
 
 body {
     margin: 0;
-    padding: 0;
     min-height: 100vh;
-    background-color: #f8f9fa;
-    color: #212529;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', 'Segoe UI', sans-serif;
+    line-height: 1.6;
 }
 
-
-/* ==========================================
-   NAVBAR
-   ========================================== */
-
-.navbar {
-    min-height: 64px;
+h1, h2, h3, h4, h5, h6 {
+    color: var(--ink);
+    font-weight: 700;
+    letter-spacing: 0;
 }
 
-.navbar-brand {
-    font-size: 1.35rem;
-    letter-spacing: 0.3px;
+h1, h2 {
+    font-family: 'Libre Baskerville', Georgia, serif;
 }
 
-.navbar .nav-link {
-    transition: opacity 0.2s ease;
-}
-
-    .navbar .nav-link:hover {
-        opacity: 0.8;
-    }
-
-
-/* ==========================================
-   MAIN CONTENT
-   ========================================== */
+a { color: var(--teal); }
+a:hover { color: var(--teal-dark); }
 
 main {
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 150px);
+    padding-bottom: 3rem;
 }
 
+.container { max-width: 1180px; }
 
-/* ==========================================
-   CARDS
-   ========================================== */
-
-.card {
-    border: none;
-    border-radius: 12px;
+.site-nav {
+    min-height: 72px;
+    background: var(--navy) !important;
+    border-bottom: 3px solid var(--amber);
 }
 
-    .card.shadow,
-    .card.shadow-sm {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-        .card.shadow:hover,
-        .card.shadow-sm:hover {
-            transform: translateY(-3px);
-        }
-
-
-/* ==========================================
-   BOOK CARDS
-   ========================================== */
-
-.book-card {
-    height: 100%;
-    overflow: hidden;
+.site-nav .navbar-brand {
+    color: #fff;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1.15rem;
 }
 
-    .book-card img {
-        width: 100%;
-        height: 240px;
-        object-fit: cover;
-    }
+.site-nav .navbar-brand:hover { color: #fff; }
 
-
-/* ==========================================
-   BUTTONS
-   ========================================== */
-
-.btn {
-    border-radius: 7px;
+.site-nav .nav-link {
+    color: rgba(255, 255, 255, 0.78) !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.7rem 0.8rem !important;
+    transition: color 0.2s ease, background 0.2s ease;
 }
 
-
-/* ==========================================
-   TABLES
-   ========================================== */
-
-.table {
-    vertical-align: middle;
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1);
 }
 
-    .table thead th {
-        white-space: nowrap;
-    }
-
-
-/* ==========================================
-   FORMS
-   ========================================== */
-
-.form-control,
-.form-select {
-    border-radius: 7px;
-    padding: 0.65rem 0.75rem;
+.site-nav .dropdown-menu {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 0.45rem;
 }
 
-    .form-control:focus,
-    .form-select:focus {
-        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
-    }
-
-
-/* ==========================================
-   BADGES
-   ========================================== */
-
-.badge {
-    font-weight: 500;
+.site-nav .dropdown-item {
+    border-radius: 5px;
+    color: var(--ink);
+    font-size: 0.9rem;
+    padding: 0.6rem 0.75rem;
 }
 
+.site-nav .dropdown-item:hover {
+    background: var(--soft-teal);
+    color: var(--teal-dark);
+}
 
-/* ==========================================
-   HERO
-   ========================================== */
+.site-main { padding-top: 2rem; }
 
 .hero-section {
-    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: -2rem;
+    padding: 5.5rem 0 5rem;
+    background: linear-gradient(116deg, var(--navy-deep) 0%, var(--navy) 65%, #245666 100%);
+    color: #fff;
 }
 
+.hero-section::after {
+    position: absolute;
+    right: 8%;
+    bottom: -5rem;
+    width: 22rem;
+    height: 22rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    content: '';
+}
 
-/* ==========================================
-   ALERTS
-   ========================================== */
+.hero-section h1,
+.hero-section p {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.hero-section h1 {
+    max-width: 700px;
+    font-size: clamp(2.1rem, 5vw, 4rem);
+    line-height: 1.15;
+}
+
+.hero-section .lead {
+    max-width: 620px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.hero-section .display-1 {
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.card {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: 0 2px 5px rgba(29, 42, 53, 0.03);
+}
+
+.card.shadow, .card.shadow-sm {
+    box-shadow: var(--shadow) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card.shadow:hover, .card.shadow-sm:hover {
+    box-shadow: 0 16px 32px rgba(29, 42, 53, 0.13) !important;
+    transform: translateY(-3px);
+}
+
+.card-body { padding: 1.25rem; }
+
+.card-footer {
+    border-top: 1px solid var(--line) !important;
+    background: #fbfcfb !important;
+}
+
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0.58rem 0.9rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+.btn-primary {
+    border-color: var(--teal);
+    background: var(--teal);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    border-color: var(--teal-dark);
+    background: var(--teal-dark);
+}
+
+.btn-outline-primary {
+    border-color: var(--teal);
+    color: var(--teal);
+}
+
+.btn-outline-primary:hover {
+    border-color: var(--teal);
+    background: var(--teal);
+}
+
+.btn-warning {
+    border-color: var(--amber);
+    background: var(--amber);
+    color: #fff;
+}
+
+.btn-warning:hover {
+    border-color: #b97727;
+    background: #b97727;
+    color: #fff;
+}
+
+.form-control, .form-select {
+    border: 1px solid #cbd6d6;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--ink);
+    padding: 0.68rem 0.8rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 0.2rem rgba(24, 124, 120, 0.14);
+}
+
+.form-label {
+    color: var(--ink);
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+
+.table-responsive {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.table { margin-bottom: 0; vertical-align: middle; }
+
+.table > :not(caption) > * > * {
+    border-bottom-color: var(--line);
+    padding: 0.85rem 1rem;
+}
+
+.table thead th {
+    background: var(--navy);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * { background: #f8faf9; }
+
+.badge {
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.42rem 0.62rem;
+}
+
+.bg-success { background-color: #277f6d !important; }
+.bg-warning { background-color: var(--amber) !important; }
+.bg-info { background-color: #4d8da1 !important; }
 
 .alert {
-    border-radius: 8px;
+    border: 0;
+    border-left: 4px solid currentColor;
+    border-radius: 5px;
 }
 
+.alert-info { background: var(--soft-teal); color: var(--teal-dark); }
+.alert-warning { background: var(--soft-amber); color: #8a5a18; }
+.alert-success { background: #e8f4ed; color: #216745; }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
-
-.footer {
-    background-color: #ffffff;
-    color: #6c757d;
-    margin-top: 50px;
+.footer, .site-footer {
+    margin-top: 0;
+    border-top: 1px solid var(--line) !important;
+    background: #fff;
+    color: var(--muted);
+    font-size: 0.85rem;
 }
-
-
-/* ==========================================
-   BOOK DETAILS
-   ========================================== */
 
 .book-cover-large {
     max-height: 500px;
     width: 100%;
+    border-radius: 8px;
     object-fit: contain;
 }
 
+.report-card { height: 100%; }
+.report-card h4 { font-size: 1.1rem; }
 
-/* ==========================================
-   REPORT CARDS
-   ========================================== */
+section > h2, section > .d-flex h2 { font-size: 1.55rem; }
 
-.report-card {
-    height: 100%;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.validation-summary-errors, .field-validation-error {
+    color: #a53f3f;
+    font-size: 0.85rem;
 }
 
-    .report-card:hover {
-        transform: translateY(-4px);
-    }
-
-
-/* ==========================================
-   RESPONSIVE
-   ========================================== */
-
 @media (max-width: 767px) {
-
-    .hero-section {
-        padding: 50px 0;
-    }
-
-    .book-card img {
-        height: 200px;
-    }
-
+    .site-main { padding-top: 1rem; }
+    .hero-section { margin-top: -1rem; padding: 4rem 0 3.5rem; }
+    .hero-section .display-1 { display: none; }
+    .card-img-top { height: 220px; }
+    .table { font-size: 0.88rem; }
+    .table > :not(caption) > * > * { padding: 0.65rem 0.7rem; }
+}
     .table {
         font-size: 0.9rem;
     }

@@ -134,7 +134,6 @@ D:\Project & Assignment\LibraryManagementSystem\LibraryManagementSystem\obj\Debu
 D:\Project & Assignment\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0\staticwebassets.development.json
 D:\Project & Assignment\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\Project & Assignment\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0\swae.build.ex.cache
-D:\Project & Assignment\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Project & Assignment\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0\LibraryM.4D120AE7.Up2Date
 D:\Project & Assignment\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0\LibraryManagementSystem.dll
 D:\Project & Assignment\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0\refint\LibraryManagementSystem.dll
