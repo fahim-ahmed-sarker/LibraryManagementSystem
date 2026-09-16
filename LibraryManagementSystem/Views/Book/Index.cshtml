@@ -126,26 +126,28 @@
                             }
                             else
                             {
-                                <span class="badge bg-warning text-dark">
+                                <span class="badge status-badge status-@book.AvailabilityStatus.ToLowerInvariant()">
                                     @book.AvailabilityStatus
                                 </span>
                             }
                         </p>
 
-                        <a asp-action="Details"
-                           asp-route-id="@book.BookID"
-                           class="btn btn-outline-primary btn-sm">
-                            View Details
-                        </a>
-
-                        @if (User.IsInRole("Librarian"))
-                        {
-                            <a asp-action="Edit"
+                        <div class="card-actions">
+                            <a asp-action="Details"
                                asp-route-id="@book.BookID"
-                               class="btn btn-outline-warning btn-sm">
-                                Edit
+                               class="btn btn-outline-primary btn-sm">
+                                View Details
                             </a>
-                        }
+
+                            @if (User.IsInRole("Librarian"))
+                            {
+                                <a asp-action="Edit"
+                                   asp-route-id="@book.BookID"
+                                   class="btn btn-outline-warning btn-sm">
+                                    Edit
+                                </a>
+                            }
+                        </div>
 
                     </div>
 

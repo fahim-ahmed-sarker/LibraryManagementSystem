@@ -25,6 +25,8 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: var(--paper);
     color: var(--ink);
     font-family: 'DM Sans', 'Segoe UI', sans-serif;
@@ -45,6 +47,7 @@ a { color: var(--teal); }
 a:hover { color: var(--teal-dark); }
 
 main {
+    flex: 1 0 auto;
     min-height: calc(100vh - 150px);
     padding-bottom: 3rem;
 }
@@ -58,12 +61,20 @@ main {
 }
 
 .site-nav .navbar-brand {
+    align-items: center;
     color: #fff;
+    display: inline-flex;
+    gap: 0.6rem;
     font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 1.15rem;
 }
 
 .site-nav .navbar-brand:hover { color: #fff; }
+
+.brand-logo {
+    height: 34px;
+    width: 34px;
+}
 
 .site-nav .nav-link {
     color: rgba(255, 255, 255, 0.78) !important;
@@ -138,10 +149,145 @@ main {
     color: rgba(255, 255, 255, 0.76);
 }
 
-.hero-section .display-1 {
+.hero-eyebrow {
+    align-items: center;
+    color: var(--amber) !important;
+    display: flex;
+    font-size: 0.72rem;
+    font-weight: 700;
+    gap: 0.65rem;
+    letter-spacing: 0.16em;
+}
+
+.eyebrow-line {
+    background: var(--amber);
+    display: inline-block;
+    height: 1px;
+    width: 2rem;
+}
+
+.hero-secondary-action {
+    border-color: rgba(255, 255, 255, 0.32);
+    color: rgba(255, 255, 255, 0.84);
+}
+
+.hero-secondary-action:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.hero-library-panel {
     position: relative;
     z-index: 1;
-    opacity: 0.9;
+    min-height: 315px;
+    margin: 1rem 0 0 auto;
+    max-width: 390px;
+    padding: 1.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-panel-topline,
+.hero-panel-footer {
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    font-size: 0.68rem;
+    font-weight: 700;
+    justify-content: space-between;
+    letter-spacing: 0.12em;
+}
+
+.hero-panel-topline i {
+    color: var(--amber);
+    font-size: 1.15rem;
+}
+
+.hero-logo {
+    height: 86px;
+    width: 86px;
+}
+
+.hero-panel-title {
+    color: #fff !important;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1.7rem;
+    margin: 0 0 0.35rem;
+}
+
+.hero-panel-copy {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 0.9rem;
+    margin: 0;
+    max-width: 250px;
+}
+
+.hero-panel-link {
+    align-items: center;
+    color: #fff;
+    display: inline-flex;
+    font-size: 0.82rem;
+    font-weight: 700;
+    gap: 0.55rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.hero-panel-link:hover {
+    color: var(--amber);
+}
+
+.hero-panel-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.hero-panel-footer > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 5.5rem;
+}
+
+.hero-panel-footer strong {
+    color: #fff;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+}
+
+.hero-panel-footer span {
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.section-icon {
+    color: var(--teal);
+    font-size: 1.25rem;
+    margin-right: 0.45rem;
+}
+
+.placeholder-icon {
+    color: var(--teal);
+    font-size: 2.5rem;
+}
+
+.rating-star {
+    color: var(--amber);
+}
+
+.rating-star.muted {
+    color: #b7c0c0;
 }
 
 .card {
@@ -164,6 +310,48 @@ main {
 
 .card-body { padding: 1.25rem; }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.card-body p {
+    margin-bottom: 0.5rem;
+    min-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+}
+
+.card-body .card-title {
+    min-height: 3rem;
+    margin-bottom: 0.9rem;
+}
+
+.card-body > .card-actions,
+.card-body > .btn,
+.card-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.75rem;
+}
+
+.card-actions .btn {
+    text-align: center;
+    width: 100%;
+}
+
 .card-footer {
     border-top: 1px solid var(--line) !important;
     background: #fbfcfb !important;
@@ -172,6 +360,122 @@ main {
 .card-img-top {
     height: 240px;
     object-fit: cover;
+}
+
+.home-book-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.shelf-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
+}
+
+.shelf-controls {
+    display: flex;
+    gap: 0.45rem;
+}
+
+.shelf-arrow {
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--teal);
+    display: inline-flex;
+    height: 2.25rem;
+    justify-content: center;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    width: 2.25rem;
+}
+
+.shelf-arrow:hover {
+    background: var(--teal);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.book-shelf-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.25rem 0.25rem 1.2rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.book-shelf-row::-webkit-scrollbar {
+    display: none;
+}
+
+.book-shelf-item {
+    flex: 0 0 218px;
+    scroll-snap-align: start;
+}
+
+.book-shelf-item .home-book-card {
+    min-height: 430px;
+}
+
+.available-book-card {
+    min-height: 410px;
+}
+
+.home-book-card .home-book-cover,
+.home-book-card > .bg-light {
+    height: 220px !important;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.home-book-card .card-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 106px;
+}
+
+.home-book-card .card-title {
+    display: -webkit-box;
+    min-height: 2.7rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-book-card .book-card-author,
+.home-book-card .book-card-genre {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.home-book-card .book-card-author {
+    color: var(--ink);
+    font-size: 0.84rem;
+    font-weight: 600;
+}
+
+.home-book-card .book-card-genre {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.home-book-card .book-card-status {
+    color: var(--ink);
+    font-size: 0.8rem;
+}
+
+.home-book-card .book-card-status .status-badge {
+    margin-left: 0.2rem;
+}
+
+.home-book-card .card-footer {
+    margin-top: auto;
 }
 
 .btn {
@@ -271,6 +575,25 @@ main {
 .bg-warning { background-color: var(--amber) !important; }
 .bg-info { background-color: #4d8da1 !important; }
 
+.status-badge {
+    border: 0;
+    color: #fff !important;
+}
+
+.status-available,
+.status-returned {
+    background: #277f6d !important;
+}
+
+.status-borrowed,
+.status-reserved {
+    background: #397d9b !important;
+}
+
+.status-overdue {
+    background: #b84b4b !important;
+}
+
 .alert {
     border: 0;
     border-left: 4px solid currentColor;
@@ -282,10 +605,11 @@ main {
 .alert-success { background: #e8f4ed; color: #216745; }
 
 .footer, .site-footer {
-    margin-top: 0;
+    position: relative;
+    margin-top: auto;
     border-top: 1px solid var(--line) !important;
     background: #fff;
-    color: var(--muted);
+    color: #000 !important;
     font-size: 0.85rem;
 }
 
@@ -309,8 +633,9 @@ section > h2, section > .d-flex h2 { font-size: 1.55rem; }
 @media (max-width: 767px) {
     .site-main { padding-top: 1rem; }
     .hero-section { margin-top: -1rem; padding: 4rem 0 3.5rem; }
-    .hero-section .display-1 { display: none; }
+    .hero-library-panel { margin: 2rem 0 0; }
     .card-img-top { height: 220px; }
+    .book-shelf-item { flex-basis: 245px; }
     .table { font-size: 0.88rem; }
     .table > :not(caption) > * > * { padding: 0.65rem 0.7rem; }
 }

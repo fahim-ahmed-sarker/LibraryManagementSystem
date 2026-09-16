@@ -213,11 +213,13 @@
                         {
                             if (i <= Math.Round(averageRating))
                             {
-                                <span>⭐</span>
+                                          <i class="bi bi-star-fill rating-star"
+                                              aria-hidden="true"></i>
                             }
                             else
                             {
-                                <span>☆</span>
+                                          <i class="bi bi-star rating-star muted"
+                                              aria-hidden="true"></i>
                             }
                         }
 
@@ -258,11 +260,13 @@
                             {
                                 if (i <= feedback.Rating)
                                 {
-                                    <span>⭐</span>
+                                                <i class="bi bi-star-fill rating-star"
+                                                    aria-hidden="true"></i>
                                 }
                                 else
                                 {
-                                    <span>☆</span>
+                                                <i class="bi bi-star rating-star muted"
+                                                    aria-hidden="true"></i>
                                 }
                             }
 
@@ -299,7 +303,9 @@
                asp-action="Create"
                asp-route-bookId="@Model.BookID"
                class="btn btn-primary">
-                ⭐ Give Feedback
+                     <i class="bi bi-chat-square-text me-2"
+                         aria-hidden="true"></i>
+                     Give Feedback
             </a>
 
         </div>

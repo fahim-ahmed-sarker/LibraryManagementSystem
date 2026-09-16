@@ -33,30 +33,75 @@
 
         <div class="row align-items-center">
 
-            <div class="col-md-8">
+            <div class="col-lg-7">
 
-                <h1 class="display-4 fw-bold">
-                    Library Management System
-                </h1>
-
-                <p class="lead">
-                    Discover books, borrow your favourites,
-                    reserve unavailable books and manage
-                    your reading history.
+                <p class="hero-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    CITY KNOWLEDGE LIBRARY
                 </p>
 
-                <a asp-controller="Book"
-                   asp-action="Index"
-                   class="btn btn-light btn-lg">
-                    Browse Books
-                </a>
+                <h1 class="display-4 fw-bold mb-4">
+                    City Knowledge Library
+                </h1>
+
+                <p class="lead mb-4">
+                    A considered place to discover new ideas,
+                    borrow confidently, and keep your reading life organised.
+                </p>
+
+                     <a asp-controller="Book"
+                         asp-action="Index"
+                         class="btn btn-light btn-lg">
+                          Browse Catalogue
+                          <i class="bi bi-arrow-up-right ms-2"
+                              aria-hidden="true"></i>
+                     </a>
 
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-lg-5">
 
-                <div class="display-1">
-                    📚
+                <div class="hero-library-panel">
+                    <div class="hero-panel-topline">
+                        <span>EST. 2026</span>
+                        <i class="bi bi-arrow-up-right"
+                           aria-hidden="true"></i>
+                    </div>
+
+                    <img src="~/images/library-logo.svg"
+                         class="hero-logo"
+                         alt="" />
+
+                    <div>
+                        <p class="hero-panel-title">
+                            Read further.
+                        </p>
+                        <p class="hero-panel-copy">
+                            Find your next perspective among the shelves.
+                        </p>
+                        <a asp-controller="Book"
+                           asp-action="Index"
+                           class="hero-panel-link">
+                            Open catalogue
+                            <i class="bi bi-arrow-right"
+                               aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-panel-footer">
+                        <div>
+                            <strong>@ViewBag.TotalTitles</strong>
+                            <span>titles</span>
+                        </div>
+                        <div>
+                            <strong>@ViewBag.AvailableTitleCount</strong>
+                            <span>available</span>
+                        </div>
+                        <div>
+                            <strong>@ViewBag.GenreCount</strong>
+                            <span>genres</span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -81,7 +126,9 @@
                     align-items-center mb-3">
 
             <h2>
-                🆕 New Arrivals
+                     <i class="bi bi-stars section-icon"
+                         aria-hidden="true"></i>
+                     New Arrivals
             </h2>
 
             <a asp-controller="Book"
@@ -93,7 +140,27 @@
         </div>
 
 
-        <div class="row">
+        <div class="shelf-toolbar">
+            <div></div>
+            <div class="shelf-controls">
+                <button type="button"
+                        class="shelf-arrow"
+                        data-shelf-target="new-arrivals-shelf"
+                        data-shelf-direction="-1"
+                        aria-label="Previous new arrivals">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button type="button"
+                        class="shelf-arrow"
+                        data-shelf-target="new-arrivals-shelf"
+                        data-shelf-direction="1"
+                        aria-label="Next new arrivals">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="new-arrivals-shelf" class="row book-shelf-row">
 
             @if (!newArrivals.Any())
             {
@@ -109,15 +176,15 @@
             {
                 @foreach (var book in newArrivals)
                 {
-                    <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="col-md-4 col-lg-2 mb-4 book-shelf-item">
 
-                        <div class="card h-100 shadow-sm">
+                        <div class="card h-100 shadow-sm home-book-card">
 
                             @if (!string.IsNullOrEmpty(
                                 book.CoverImageUrl))
                             {
                                 <img src="@book.CoverImageUrl"
-                                     class="card-img-top"
+                                     class="card-img-top home-book-cover"
                                      style="height:220px;
                                             object-fit:cover;"
                                      alt="@book.Title" />
@@ -129,7 +196,8 @@
                                             justify-content-center"
                                      style="height:220px;">
 
-                                    📖
+                                                <i class="bi bi-book placeholder-icon"
+                                                    aria-hidden="true"></i>
 
                                 </div>
                             }
@@ -140,9 +208,20 @@
                                     @book.Title
                                 </h6>
 
-                                <small class="text-muted">
-                                    @book.Author
-                                </small>
+                                <p class="book-card-author mb-1">
+                                    <strong>Author:</strong> @book.Author
+                                </p>
+
+                                <p class="book-card-genre mb-2">
+                                    <strong>Genre:</strong> @book.Genre
+                                </p>
+
+                                <p class="book-card-status mb-0">
+                                    <strong>Status:</strong>
+                                    <span class="badge status-badge status-@book.AvailabilityStatus.ToLowerInvariant()">
+                                        @book.AvailabilityStatus
+                                    </span>
+                                </p>
 
                             </div>
 
@@ -179,13 +258,33 @@
                     align-items-center mb-3">
 
             <h2>
-                🔥 Most Borrowed Books
+                     <i class="bi bi-fire section-icon"
+                         aria-hidden="true"></i>
+                     Most Borrowed Books
             </h2>
 
         </div>
 
 
-        <div class="row">
+        <div class="shelf-toolbar">
+            <div></div>
+            <div class="shelf-controls">
+                <button type="button" class="shelf-arrow"
+                        data-shelf-target="most-borrowed-shelf"
+                        data-shelf-direction="-1"
+                        aria-label="Previous most borrowed books">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="shelf-arrow"
+                        data-shelf-target="most-borrowed-shelf"
+                        data-shelf-direction="1"
+                        aria-label="Next most borrowed books">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="most-borrowed-shelf" class="row book-shelf-row">
 
             @if (!mostBorrowed.Any())
             {
@@ -201,15 +300,15 @@
             {
                 @foreach (var book in mostBorrowed)
                 {
-                    <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="col-md-4 col-lg-2 mb-4 book-shelf-item">
 
-                        <div class="card h-100 shadow-sm">
+                        <div class="card h-100 shadow-sm home-book-card">
 
                             @if (!string.IsNullOrEmpty(
                                 book.CoverImageUrl))
                             {
                                 <img src="@book.CoverImageUrl"
-                                     class="card-img-top"
+                                     class="card-img-top home-book-cover"
                                      style="height:220px;
                                             object-fit:cover;"
                                      alt="@book.Title" />
@@ -221,7 +320,8 @@
                                             justify-content-center"
                                      style="height:220px;">
 
-                                    📖
+                                                <i class="bi bi-book placeholder-icon"
+                                                    aria-hidden="true"></i>
 
                                 </div>
                             }
@@ -232,9 +332,20 @@
                                     @book.Title
                                 </h6>
 
-                                <small class="text-muted">
-                                    @book.Author
-                                </small>
+                                <p class="book-card-author mb-1">
+                                    <strong>Author:</strong> @book.Author
+                                </p>
+
+                                <p class="book-card-genre mb-2">
+                                    <strong>Genre:</strong> @book.Genre
+                                </p>
+
+                                <p class="book-card-status mb-0">
+                                    <strong>Status:</strong>
+                                    <span class="badge status-badge status-@book.AvailabilityStatus.ToLowerInvariant()">
+                                        @book.AvailabilityStatus
+                                    </span>
+                                </p>
 
                             </div>
 
@@ -268,10 +379,30 @@
     <section class="mb-5">
 
         <h2 class="mb-3">
-            🎯 Recommended Books
+                <i class="bi bi-compass section-icon"
+                    aria-hidden="true"></i>
+                Recommended Books
         </h2>
 
-        <div class="row">
+        <div class="shelf-toolbar">
+            <div></div>
+            <div class="shelf-controls">
+                <button type="button" class="shelf-arrow"
+                        data-shelf-target="recommended-shelf"
+                        data-shelf-direction="-1"
+                        aria-label="Previous recommended books">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="shelf-arrow"
+                        data-shelf-target="recommended-shelf"
+                        data-shelf-direction="1"
+                        aria-label="Next recommended books">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="recommended-shelf" class="row book-shelf-row">
 
             @if (!recommendedBooks.Any())
             {
@@ -288,15 +419,15 @@
             {
                 @foreach (var book in recommendedBooks)
                 {
-                    <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="col-md-4 col-lg-2 mb-4 book-shelf-item">
 
-                        <div class="card h-100 shadow-sm">
+                        <div class="card h-100 shadow-sm home-book-card">
 
                             @if (!string.IsNullOrEmpty(
                                 book.CoverImageUrl))
                             {
                                 <img src="@book.CoverImageUrl"
-                                     class="card-img-top"
+                                     class="card-img-top home-book-cover"
                                      style="height:220px;
                                             object-fit:cover;"
                                      alt="@book.Title" />
@@ -308,7 +439,8 @@
                                             justify-content-center"
                                      style="height:220px;">
 
-                                    📖
+                                                <i class="bi bi-book placeholder-icon"
+                                                    aria-hidden="true"></i>
 
                                 </div>
                             }
@@ -319,12 +451,25 @@
                                     @book.Title
                                 </h6>
 
-                                <small class="text-muted">
-                                    @book.Author
-                                </small>
+                                <p class="book-card-author mb-1">
+                                    <strong>Author:</strong> @book.Author
+                                </p>
+
+                                <p class="book-card-genre mb-2">
+                                    <strong>Genre:</strong> @book.Genre
+                                </p>
+
+                                <p class="book-card-status mb-0">
+                                    <strong>Status:</strong>
+                                    <span class="badge status-badge status-@book.AvailabilityStatus.ToLowerInvariant()">
+                                        @book.AvailabilityStatus
+                                    </span>
+                                </p>
 
                                 <div class="mt-2">
-                                    ⭐ Recommended
+                                                <i class="bi bi-award me-1"
+                                                    aria-hidden="true"></i>
+                                                Recommended
                                 </div>
 
                             </div>
@@ -362,7 +507,9 @@
                     align-items-center mb-3">
 
             <h2>
-                ✅ Currently Available
+                     <i class="bi bi-check2-circle section-icon"
+                         aria-hidden="true"></i>
+                     Currently Available
             </h2>
 
             <a asp-controller="Book"
@@ -374,7 +521,25 @@
         </div>
 
 
-        <div class="row">
+        <div class="shelf-toolbar">
+            <div></div>
+            <div class="shelf-controls">
+                <button type="button" class="shelf-arrow"
+                        data-shelf-target="available-books-shelf"
+                        data-shelf-direction="-1"
+                        aria-label="Previous available books">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="shelf-arrow"
+                        data-shelf-target="available-books-shelf"
+                        data-shelf-direction="1"
+                        aria-label="Next available books">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="available-books-shelf" class="row book-shelf-row">
 
             @if (!availableBooks.Any())
             {
@@ -390,36 +555,53 @@
             {
                 @foreach (var book in availableBooks)
                 {
-                    <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-4 book-shelf-item">
 
-                        <div class="card shadow-sm">
+                        <div class="card h-100 shadow-sm home-book-card available-book-card">
+
+                            @if (!string.IsNullOrEmpty(book.CoverImageUrl))
+                            {
+                                <img src="@book.CoverImageUrl"
+                                     class="card-img-top home-book-cover"
+                                     alt="@book.Title" />
+                            }
+                            else
+                            {
+                                <div class="bg-light text-center d-flex align-items-center justify-content-center"
+                                     style="height:220px;">
+                                    <i class="bi bi-book placeholder-icon"
+                                       aria-hidden="true"></i>
+                                </div>
+                            }
 
                             <div class="card-body">
 
-                                <h5>
+                                <h6 class="card-title">
                                     @book.Title
-                                </h5>
+                                </h6>
 
-                                <p class="mb-1">
-                                    <strong>Author:</strong>
-                                    @book.Author
+                                <p class="book-card-author mb-1">
+                                    <strong>Author:</strong> @book.Author
                                 </p>
 
-                                <p class="mb-2">
-                                    <strong>Genre:</strong>
-                                    @book.Genre
+                                <p class="book-card-genre mb-2">
+                                    <strong>Genre:</strong> @book.Genre
                                 </p>
 
-                                <span class="badge bg-success">
-                                    Available
-                                </span>
+                                <p class="book-card-status mb-0">
+                                    <strong>Status:</strong>
+                                    <span class="badge status-badge status-@book.AvailabilityStatus.ToLowerInvariant()">
+                                        @book.AvailabilityStatus
+                                    </span>
+                                </p>
 
+                            </div>
+
+                            <div class="card-footer bg-white">
                                 <a asp-controller="Book"
                                    asp-action="Details"
                                    asp-route-id="@book.BookID"
-                                   class="btn btn-sm
-                                          btn-outline-primary
-                                          float-end">
+                                   class="btn btn-sm btn-primary w-100">
                                     Details
                                 </a>
 
@@ -443,7 +625,9 @@
     <section class="mb-5">
 
         <h2 class="mb-3">
-            👥 Group Details
+                <i class="bi bi-people section-icon"
+                    aria-hidden="true"></i>
+                Group Details
         </h2>
 
         <div class="table-responsive">

@@ -73,6 +73,14 @@ namespace LibraryManagementSystem.Controllers
                 .Take(6)
                 .ToListAsync();
 
+            ViewBag.TotalTitles = await _context.Books.CountAsync();
+            ViewBag.AvailableTitleCount = await _context.Books
+                .CountAsync(b => b.AvailabilityStatus == "Available");
+            ViewBag.GenreCount = await _context.Books
+                .Select(b => b.Genre)
+                .Distinct()
+                .CountAsync();
+
 
             // ==========================================
             // SEND DATA TO VIEW

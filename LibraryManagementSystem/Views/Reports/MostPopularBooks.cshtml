@@ -10,7 +10,9 @@
                 align-items-center mb-4">
 
         <h1>
-            🔥 Most Popular Books
+                <i class="bi bi-fire me-2"
+                    aria-hidden="true"></i>
+                Most Popular Books
         </h1>
 
         <a asp-action="Index"
@@ -90,7 +92,8 @@
                             @if (book.AverageRating > 0)
                             {
                                 <span>
-                                    ⭐
+                                                <i class="bi bi-star-fill rating-star me-1"
+                                                    aria-hidden="true"></i>
                                     @book.AverageRating
                                         .ToString("0.0") / 5
                                 </span>
