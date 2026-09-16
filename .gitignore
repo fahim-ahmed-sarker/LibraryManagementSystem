@@ -1,0 +1,11 @@
+.vs/
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+.vscode/
+.idea/
+TestResults/
+*.user
+*.suo
+*.rsuser
