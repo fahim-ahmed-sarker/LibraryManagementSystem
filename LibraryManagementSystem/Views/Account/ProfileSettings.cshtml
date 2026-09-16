@@ -1,0 +1,99 @@
+@model LibraryManagementSystem.Models.ProfileSettingsViewModel
+
+@{
+    ViewData["Title"] = "Profile Settings";
+}
+
+<div class="container account-settings-page">
+    <div class="settings-card">
+
+        <div class="settings-header">
+
+            <h2>Profile Settings</h2>
+
+            <p class="settings-meta">
+                Manage your library account details.
+            </p>
+
+        </div>
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+
+        <form asp-action="ProfileSettings"
+              method="post">
+
+            <div asp-validation-summary="ModelOnly"
+                 class="text-danger mb-3"></div>
+
+            <div class="settings-panel">
+
+                <div class="mb-3">
+                    <label asp-for="FullName"
+                           class="form-label"></label>
+
+                    <input asp-for="FullName"
+                           class="form-control" />
+
+                    <span asp-validation-for="FullName"
+                          class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email"
+                           class="form-label"></label>
+
+                    <input asp-for="Email"
+                           class="form-control"
+                           readonly />
+                </div>
+
+            </div>
+
+            <div class="settings-panel mt-4">
+
+                <h3 class="h5 mb-2">
+                    Password Settings
+                </h3>
+
+                <p class="settings-meta mb-3">
+                    Change your password to keep your account secure.
+                </p>
+
+                <a asp-controller="Account"
+                   asp-action="ChangePassword"
+                   class="btn btn-outline-primary">
+                    <i class="bi bi-shield-lock me-2"
+                       aria-hidden="true"></i>
+                    Change Password
+                </a>
+
+            </div>
+
+            <div class="settings-actions">
+
+                <a asp-controller="Home"
+                   asp-action="Index"
+                   class="btn btn-outline-secondary">
+                    Cancel
+                </a>
+
+                <button type="submit"
+                        class="btn btn-primary">
+                    Save Changes
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -33,6 +33,67 @@ body {
     line-height: 1.6;
 }
 
+body.theme-dark {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+body.theme-dark .card,
+body.theme-dark .table-responsive,
+body.theme-dark .home-book-card,
+body.theme-dark .table,
+body.theme-dark .card-footer,
+body.theme-dark .form-control,
+body.theme-dark .form-select {
+    background: #111827 !important;
+    border-color: #2f4054 !important;
+    color: #e2e8f0 !important;
+}
+
+body.theme-dark .card-body,
+body.theme-dark .card-body p,
+body.theme-dark .card-title,
+body.theme-dark .book-card-author,
+body.theme-dark .book-card-genre,
+body.theme-dark .book-card-status,
+body.theme-dark .table,
+body.theme-dark .table td,
+body.theme-dark .table th,
+body.theme-dark .form-label,
+body.theme-dark label,
+body.theme-dark .alert,
+body.theme-dark .settings-card,
+body.theme-dark .settings-panel {
+    color: #e2e8f0 !important;
+}
+
+body.theme-dark .site-nav .dropdown-menu {
+    background: #111827;
+    border-color: #2f4054;
+}
+
+body.theme-dark .site-nav .dropdown-item,
+body.theme-dark .site-nav .dropdown-item-text,
+body.theme-dark .theme-switch {
+    color: #e2e8f0;
+}
+
+body.theme-dark .home-book-card .book-card-genre,
+body.theme-dark .book-card-status,
+body.theme-dark .text-muted {
+    color: #a7b5c5 !important;
+}
+
+body.theme-dark .site-nav .dropdown-item:hover {
+    background: rgba(24, 124, 120, 0.18);
+    color: #ffffff;
+}
+
+body.theme-dark .footer,
+body.theme-dark .site-footer {
+    background: #0b1220 !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--ink);
     font-weight: 700;
@@ -54,10 +115,41 @@ main {
 
 .container { max-width: 1180px; }
 
+.section-divider {
+    border-top: 1px solid rgba(23, 48, 66, 0.12);
+    padding-top: 1.5rem;
+    margin-top: 1.25rem;
+}
+
 .site-nav {
     min-height: 72px;
     background: var(--navy) !important;
     border-bottom: 3px solid var(--amber);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-nav .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    margin: 0 auto;
+}
+
+.navbar-collapse {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.navbar-collapse .navbar-nav.me-auto {
+    justify-content: center;
+    width: 100%;
 }
 
 .site-nav .navbar-brand {
@@ -67,6 +159,9 @@ main {
     gap: 0.6rem;
     font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 1.15rem;
+    margin-right: 1.5rem;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .site-nav .navbar-brand:hover { color: #fff; }
@@ -76,12 +171,29 @@ main {
     width: 34px;
 }
 
+.site-nav .navbar-nav {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.50rem;
+}
+
+.site-nav .navbar-nav.me-auto {
+    margin-right: 0 !important;
+    padding-left: 0;
+}
+
+.site-nav .navbar-nav:last-child {
+    margin-left: auto;
+    padding-right: 0;
+}
+
 .site-nav .nav-link {
     color: rgba(255, 255, 255, 0.78) !important;
     font-size: 0.9rem;
     font-weight: 600;
     padding: 0.7rem 0.8rem !important;
     transition: color 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
 }
 
 .site-nav .nav-link:hover,
@@ -104,9 +216,71 @@ main {
     padding: 0.6rem 0.75rem;
 }
 
+.site-nav .dropdown-item-text {
+    color: var(--muted);
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 0.5rem 0.75rem 0.2rem;
+    text-transform: uppercase;
+}
+
+.site-nav .theme-switch-item {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.theme-switch {
+    align-items: center;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.theme-switch .form-check-input {
+    width: 2.6rem;
+    height: 1.35rem;
+    margin-top: 0;
+    background-color: #dfe7eb;
+    border: 1px solid #c8d2d7;
+    cursor: pointer;
+}
+
+.theme-switch .form-check-input:checked {
+    background-color: var(--teal);
+    border-color: var(--teal);
+}
+
+.theme-switch .form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(24, 124, 120, 0.2);
+}
+
+.site-nav .navbar-nav .nav-item:first-child .nav-link {
+    padding-left: 0 !important;
+}
+
+.site-nav .navbar-nav:last-child .nav-item:last-child {
+    margin-left: 0.2rem;
+}
+
 .site-nav .dropdown-item:hover {
     background: var(--soft-teal);
     color: var(--teal-dark);
+}
+
+.site-nav .dropdown-item.logout-item {
+    color: #b33a3a;
+}
+
+.site-nav .dropdown-item.logout-item:hover,
+.site-nav .dropdown-item.logout-item:focus {
+    background: #fff0f0;
+    color: #922b2b;
 }
 
 .site-main { padding-top: 2rem; }
@@ -314,26 +488,32 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .card-body {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
+    padding: 1rem 1.1rem 1.1rem;
 }
 
 .card-body p {
-    margin-bottom: 0.5rem;
-    min-height: 1.8rem;
+    margin-bottom: 0.42rem;
+    min-height: 1.5rem;
     display: flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.3rem;
     flex-wrap: wrap;
+    line-height: 1.4;
 }
 
 .card-body .card-title {
-    min-height: 3rem;
-    margin-bottom: 0.9rem;
+    min-height: 2.9rem;
+    margin-bottom: 0.65rem;
+    font-size: 1.05rem;
+    line-height: 1.35;
 }
 
 .card-body > .card-actions,
@@ -350,6 +530,12 @@ main {
 .card-actions .btn {
     text-align: center;
     width: 100%;
+    margin-top: 0;
+}
+
+.card .card-img-top {
+    height: 230px;
+    object-fit: cover;
 }
 
 .card-footer {
@@ -607,10 +793,59 @@ main {
 .footer, .site-footer {
     position: relative;
     margin-top: auto;
-    border-top: 1px solid var(--line) !important;
-    background: #fff;
-    color: #000 !important;
+    border-top: 1px solid rgba(255,255,255,0.12) !important;
+    background: var(--navy) !important;
+    color: #fff !important;
     font-size: 0.85rem;
+}
+
+.account-settings-page {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.settings-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 1.5rem;
+}
+
+.settings-panel {
+    background: #f9fafb;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.1rem;
+}
+
+.settings-header {
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+}
+
+.settings-header h2 {
+    margin-bottom: 0.3rem;
+}
+
+.settings-meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.settings-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    margin-top: 1.2rem;
+}
+
+.settings-actions .btn {
+    min-width: 130px;
 }
 
 .book-cover-large {
@@ -628,6 +863,146 @@ section > h2, section > .d-flex h2 { font-size: 1.55rem; }
 .validation-summary-errors, .field-validation-error {
     color: #a53f3f;
     font-size: 0.85rem;
+}
+
+/* Keep all shared surfaces and text readable after the theme switch. */
+body.theme-dark {
+    --ink: #e5edf5;
+    --muted: #aebdca;
+    --paper: #0f172a;
+    --surface: #111c2b;
+    --line: #304154;
+    --soft-teal: #153b3d;
+    --soft-amber: #46351d;
+    --shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark h3,
+body.theme-dark h4,
+body.theme-dark h5,
+body.theme-dark h6,
+body.theme-dark .card-title,
+body.theme-dark .form-label {
+    color: #f1f5f9 !important;
+}
+
+body.theme-dark a {
+    color: #54c7c0;
+}
+
+body.theme-dark a:hover {
+    color: #8be0da;
+}
+
+body.theme-dark .card,
+body.theme-dark .table-responsive,
+body.theme-dark .settings-card,
+body.theme-dark .settings-panel {
+    background: #111c2b !important;
+    border-color: #304154 !important;
+}
+
+body.theme-dark .card-footer {
+    background: #172538 !important;
+    border-top-color: #304154 !important;
+}
+
+body.theme-dark .card-body,
+body.theme-dark .card-body p,
+body.theme-dark .book-card-author,
+body.theme-dark .book-card-status,
+body.theme-dark .settings-meta {
+    color: #d7e1eb !important;
+}
+
+body.theme-dark .book-card-genre,
+body.theme-dark .text-muted {
+    color: #aebdca !important;
+}
+
+body.theme-dark .form-control,
+body.theme-dark .form-select {
+    background: #0d1725 !important;
+    border-color: #40546a !important;
+    color: #f1f5f9 !important;
+}
+
+body.theme-dark .form-control::placeholder {
+    color: #91a2b3;
+}
+
+body.theme-dark .form-control:disabled,
+body.theme-dark .form-control[readonly] {
+    background: #172538 !important;
+    color: #b9c7d4 !important;
+}
+
+body.theme-dark .table {
+    --bs-table-color: #e5edf5;
+    --bs-table-bg: #111c2b;
+    --bs-table-border-color: #304154;
+    color: #e5edf5 !important;
+}
+
+body.theme-dark .table > :not(caption) > * > * {
+    background-color: #111c2b !important;
+    border-bottom-color: #304154 !important;
+    color: #e5edf5 !important;
+}
+
+body.theme-dark .table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #172538 !important;
+}
+
+body.theme-dark .table thead th {
+    background: #173042 !important;
+    color: #ffffff !important;
+}
+
+body.theme-dark .section-divider {
+    border-top-color: #304154;
+}
+
+body.theme-dark .bg-light {
+    background-color: #172538 !important;
+    color: #e5edf5 !important;
+}
+
+body.theme-dark .text-dark {
+    color: #e5edf5 !important;
+}
+
+body.theme-dark .btn-outline-secondary {
+    border-color: #718397;
+    color: #d7e1eb;
+}
+
+body.theme-dark .btn-outline-secondary:hover {
+    background: #304154;
+    border-color: #8da0b3;
+    color: #ffffff;
+}
+
+body.theme-dark .alert-info {
+    background: #153b3d;
+    color: #b9efea;
+}
+
+body.theme-dark .alert-warning {
+    background: #46351d;
+    color: #f5d39a;
+}
+
+body.theme-dark .alert-success {
+    background: #173d32;
+    color: #b9efd5;
+}
+
+body.theme-dark .validation-summary-errors,
+body.theme-dark .field-validation-error {
+    color: #ff9b9b;
 }
 
 @media (max-width: 767px) {
