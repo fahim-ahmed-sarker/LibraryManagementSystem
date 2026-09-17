@@ -1,12 +1,12 @@
 # Library Management System
 
-এটি ASP.NET Core MVC, Entity Framework Core এবং ASP.NET Core Identity দিয়ে তৈরি একটি Library Management System। এতে librarian এবং member-এর জন্য বই, borrowing, reservation, fine, feedback, profile এবং report management-এর সুবিধা আছে।
+This is a Library Management System built with ASP.NET Core MVC, Entity Framework Core, and ASP.NET Core Identity. It provides book, borrowing, reservation, fine, feedback, profile, and report management for librarians and members.
 
 **GitHub Repository:** [fahim-ahmed-sarker/LibraryManagementSystem](https://github.com/fahim-ahmed-sarker/LibraryManagementSystem)
 
 ## Website Preview
 
-Project-এর visual preview হিসেবে repository-তে থাকা logo এবং book cover images নিচে দেওয়া হলো:
+The repository includes the following logo and book cover images as a visual preview of the project:
 
 ![City Knowledge Library logo](LibraryManagementSystem/wwwroot/images/logo/library-logo.png)
 
@@ -14,13 +14,13 @@ Project-এর visual preview হিসেবে repository-তে থাকা 
 |---|---|---|---|
 | ![1984](LibraryManagementSystem/wwwroot/images/covers/1984.png) | ![Atomic Habits](LibraryManagementSystem/wwwroot/images/covers/atomic-habits.png) | ![Dune](LibraryManagementSystem/wwwroot/images/covers/dune.png) | ![Clean Code](LibraryManagementSystem/wwwroot/images/covers/clean-code.png) |
 
-Application-এ ব্যবহৃত প্রধান screen এবং workflow:
+The main screens and workflows available in the application are:
 
-- Home page: library introduction, featured books এবং new arrivals
-- Book Catalogue: search, genre filter, availability status, details এবং edit
-- Book Details: cover image, author, ISBN, summary, ratings এবং reviews
-- Reports Dashboard: total books, members, borrowings, overdue books এবং fines
-- Account: member/librarian registration, login, profile settings এবং password change
+- Home page: library introduction, featured books, and new arrivals
+- Book Catalogue: search, genre filter, availability status, details, and editing
+- Book Details: cover image, author, ISBN, summary, ratings, and reviews
+- Reports Dashboard: total books, members, borrowings, overdue books, and fines
+- Account: member/librarian registration, login, profile settings, and password change
 
 ### Home Page
 
@@ -38,7 +38,7 @@ Application-এ ব্যবহৃত প্রধান screen এবং workfl
 
 ![Reports dashboard with library statistics](LibraryManagementSystem/wwwroot/images/screenshots/reports-dashboard.png)
 
-> GitHub-এর image preview দেখতে উপরের repository link খুলুন। Local application চালানোর পর browser-এ `https://localhost:7070` খুললে সম্পূর্ণ interactive website দেখা যাবে।
+> Open the repository link above to view the images on GitHub. After running the local application, open `https://localhost:7070` in a browser to use the complete interactive website.
 
 ## Technology Stack
 
@@ -46,42 +46,42 @@ Application-এ ব্যবহৃত প্রধান screen এবং workfl
 - Entity Framework Core 8
 - Microsoft SQL Server / LocalDB
 - ASP.NET Core Identity
-- xUnit এবং EF Core InMemory দিয়ে unit test
+- xUnit and EF Core InMemory for unit testing
 
-## প্রয়োজনীয় Tools
+## Required Tools
 
-### সবার জন্য
+### For Everyone
 
-1. **Git**: GitHub থেকে repository clone করার জন্য
-2. **.NET 8 SDK**: project build এবং run করার জন্য
-3. **SQL Server LocalDB** অথবা **SQL Server Express/Developer**: application database-এর জন্য
-4. **একটি browser**: Chrome, Edge অথবা Firefox
+1. **Git**: To clone the repository from GitHub
+2. **.NET 8 SDK**: To build and run the project
+3. **SQL Server LocalDB** or **SQL Server Express/Developer**: For the application database
+4. **A browser**: Chrome, Edge, or Firefox
 
-### Visual Studio Code-এর জন্য
+### For Visual Studio Code
 
 - Visual Studio Code
 - **C# Dev Kit** extension
-- **C#** extension, যদি C# Dev Kit ইনস্টল করার সময় এটি স্বয়ংক্রিয়ভাবে না আসে
-- SQL database দেখতে চাইলে **SQL Server (mssql)** extension
+- **C#** extension, if it is not installed automatically with C# Dev Kit
+- **SQL Server (mssql)** extension, if you want to inspect the database
 
-### Visual Studio-এর জন্য
+### For Visual Studio
 
-- Visual Studio 2022 (17.8 বা পরবর্তী version recommended)
-- Visual Studio Installer থেকে **ASP.NET and web development** workload
-- SQL Server LocalDB সাধারণত Visual Studio-এর সঙ্গে ইনস্টল হয়। না থাকলে SQL Server Express বা Developer edition ইনস্টল করুন।
+- Visual Studio 2022 (version 17.8 or later recommended)
+- The **ASP.NET and web development** workload from Visual Studio Installer
+- SQL Server LocalDB is usually installed with Visual Studio. If it is not available, install SQL Server Express or Developer edition.
 
-> Node.js, npm বা আলাদা frontend build tool প্রয়োজন নেই। এই project-এর frontend ASP.NET Core Razor Views এবং static files দিয়ে তৈরি।
+> Node.js, npm, or a separate frontend build tool is not required. The frontend uses ASP.NET Core Razor Views and static files.
 
-## GitHub থেকে Project Clone
+## Clone the Project from GitHub
 
-PowerShell বা Command Prompt খুলে চালান:
+Open PowerShell or Command Prompt and run:
 
 ```powershell
 git clone https://github.com/fahim-ahmed-sarker/LibraryManagementSystem.git
 cd LibraryManagementSystem
 ```
 
-Repository clone করার পর solution structure সাধারণত এমন হবে:
+After cloning, the solution structure should look like this:
 
 ```text
 LibraryManagementSystem/
@@ -90,16 +90,16 @@ LibraryManagementSystem/
   LibraryManagementSystem.Tests/
 ```
 
-## Dependencies Restore এবং Build
+## Restore Dependencies and Build
 
-Solution folder-এ থেকে চালান:
+From the solution folder, run:
 
 ```powershell
 dotnet restore
 dotnet build
 ```
 
-Project-এর প্রধান NuGet dependencies:
+The main NuGet dependencies are:
 
 - `Microsoft.AspNetCore.Identity.EntityFrameworkCore` 8.0.0
 - `Microsoft.AspNetCore.Identity.UI` 8.0.0
@@ -107,7 +107,7 @@ Project-এর প্রধান NuGet dependencies:
 - `Microsoft.EntityFrameworkCore.SqlServer` 8.0.0
 - `Microsoft.EntityFrameworkCore.Tools` 8.0.0
 
-Test project-এর dependencies:
+The test project dependencies are:
 
 - `Microsoft.NET.Test.Sdk`
 - `xunit`
@@ -119,63 +119,63 @@ Test project-এর dependencies:
 
 ### Option 1: SQL Server LocalDB (Default)
 
-Application-এর default connection string [appsettings.json](LibraryManagementSystem/appsettings.json)-এ আছে:
+The default application connection string is in [appsettings.json](LibraryManagementSystem/appsettings.json):
 
 ```json
 "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=LibraryManagementSystemDb;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true"
 ```
 
-LocalDB ইনস্টল আছে কি না PowerShell-এ যাচাই করুন:
+Verify that LocalDB is installed by running this in PowerShell:
 
 ```powershell
 sqllocaldb info
 ```
 
-`MSSQLLocalDB` না চললে চালু করুন:
+If `MSSQLLocalDB` is not running, start it with:
 
 ```powershell
 sqllocaldb start MSSQLLocalDB
 ```
 
-তারপর application run করলে database `LibraryManagementSystemDb` তৈরি হবে এবং existing EF Core migrations automatically apply হবে।
+When the application starts, the `LibraryManagementSystemDb` database will be created and the existing EF Core migrations will be applied automatically.
 
-### Option 2: SQL Server Express বা Developer
+### Option 2: SQL Server Express or Developer
 
-SQL Server ব্যবহার করলে [appsettings.Development.json](LibraryManagementSystem/appsettings.Development.json)-এ সরাসরি password বা production secret commit না করে User Secrets ব্যবহার করা ভালো। Development environment-এ connection string set করার command:
+When using SQL Server, use User Secrets instead of putting passwords or production secrets directly in [appsettings.Development.json](LibraryManagementSystem/appsettings.Development.json). Set the development connection string with:
 
 ```powershell
 dotnet user-secrets init --project .\LibraryManagementSystem\LibraryManagementSystem.csproj
 dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Server=.\\SQLEXPRESS;Database=LibraryManagementSystemDb;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true" --project .\LibraryManagementSystem\LibraryManagementSystem.csproj
 ```
 
-আপনার SQL Server instance ভিন্ন হলে `Server=`-এর value পরিবর্তন করুন। উদাহরণ:
+Change the `Server=` value if your SQL Server instance is different. Example:
 
 ```text
 Server=localhost;Database=LibraryManagementSystemDb;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
 ```
 
-SQL username/password ব্যবহার করলে connection string-এ `User Id` এবং `Password` দিন, তবে তা source control-এ commit করবেন না।
+If you use a SQL username and password, add `User Id` and `Password` to the connection string, but never commit them to source control.
 
-### Migration সম্পর্কিত তথ্য
+### Migration Information
 
-Application startup-এর সময় `Database.MigrateAsync()` চলে। তাই সাধারণভাবে আলাদা migration command লাগবে না। প্রয়োজন হলে solution folder থেকে manually চালানো যাবে:
+`Database.MigrateAsync()` runs during application startup, so a separate migration command is normally not required. If necessary, run this manually from the solution folder:
 
 ```powershell
 dotnet ef database update --project .\LibraryManagementSystem\LibraryManagementSystem.csproj
 ```
 
-`dotnet ef` command না পাওয়া গেলে:
+If the `dotnet ef` command is not available:
 
 ```powershell
 dotnet tool install --global dotnet-ef --version 8.*
 ```
 
-## Application Run: Visual Studio Code
+## Run the Application: Visual Studio Code
 
-1. VS Code-এ cloned root folder `LibraryManagementSystem` খুলুন।
-2. C# Dev Kit extension ইনস্টল করুন।
-3. LocalDB অথবা SQL Server চালু আছে নিশ্চিত করুন।
-4. VS Code-এর integrated terminal খুলে চালান:
+1. Open the cloned root folder `LibraryManagementSystem` in VS Code.
+2. Install the C# Dev Kit extension.
+3. Make sure LocalDB or SQL Server is running.
+4. Open the VS Code integrated terminal and run:
 
 ```powershell
 dotnet restore
@@ -183,59 +183,59 @@ dotnet build
 dotnet run --project .\LibraryManagementSystem\LibraryManagementSystem.csproj
 ```
 
-5. Browser-এ এই URL খুলুন:
+5. Open this URL in a browser:
 
 ```text
 https://localhost:7070
 ```
 
-Certificate warning এলে development certificate trust করুন:
+If you see a certificate warning, trust the development certificate:
 
 ```powershell
 dotnet dev-certs https --clean
 dotnet dev-certs https --trust
 ```
 
-HTTPS ব্যবহার না করতে চাইলে:
+To run without HTTPS:
 
 ```powershell
 dotnet run --project .\LibraryManagementSystem\LibraryManagementSystem.csproj --launch-profile http
 ```
 
-তারপর `http://localhost:5289` খুলুন। VS Code-এ `Run and Debug` ব্যবহার করতে চাইলে C# Dev Kit-এর project launch profile থেকে `https` বা `http` profile নির্বাচন করুন।
+Then open `http://localhost:5289`. To use `Run and Debug` in VS Code, select the `https` or `http` project launch profile provided by C# Dev Kit.
 
-## Application Run: Visual Studio
+## Run the Application: Visual Studio
 
-1. Visual Studio 2022 খুলুন।
-2. `File > Open > Project/Solution` নির্বাচন করুন।
-3. `LibraryManagementSystem.slnx` খুলুন।
-4. Solution-এ web project `LibraryManagementSystem`-কে Startup Project করুন।
-5. LocalDB অথবা SQL Server চালু আছে নিশ্চিত করুন।
-6. `Build > Restore NuGet Packages` এবং তারপর `Build > Build Solution` নির্বাচন করুন।
-7. toolbar-এর profile থেকে `https` নির্বাচন করে `F5` চাপুন।
+1. Open Visual Studio 2022.
+2. Select `File > Open > Project/Solution`.
+3. Open `LibraryManagementSystem.slnx`.
+4. Set the web project `LibraryManagementSystem` as the Startup Project.
+5. Make sure LocalDB or SQL Server is running.
+6. Select `Build > Restore NuGet Packages`, then `Build > Build Solution`.
+7. Select the `https` profile in the toolbar and press `F5`.
 
-Visual Studio সাধারণত browser-এ `https://localhost:7070` খুলবে। HTTP profile চালাতে চাইলে `http` নির্বাচন করে run করুন; তখন URL হবে `http://localhost:5289`।
+Visual Studio will usually open `https://localhost:7070` in a browser. To use the HTTP profile, select `http`; the URL will be `http://localhost:5289`.
 
 ## Test Run
 
-সব test চালাতে:
+Run all tests with:
 
 ```powershell
 dotnet test
 ```
 
-Test project-এর জন্য real SQL Server লাগে না; borrowing service tests EF Core InMemory database ব্যবহার করে।
+The test project does not require a real SQL Server; the borrowing service tests use an EF Core InMemory database.
 
 ## Initial Usage
 
-- Member account তৈরি করতে `/Account/RegisterMember` খুলুন।
-- Librarian account তৈরি করতে `/Account/RegisterLibrarian` খুলুন।
-- প্রথম librarian registration-এর জন্য configuration-এ থাকা code ব্যবহার করুন: `LIBRARY2026`।
-- Librarian registration code production environment-এ পরিবর্তন করে User Secrets বা environment variable ব্যবহার করা উচিত।
+- Open `/Account/RegisterMember` to create a member account.
+- Open `/Account/RegisterLibrarian` to create a librarian account.
+- Use the configured code for the first librarian registration: `LIBRARY2026`.
+- Change the librarian registration code for production and store it in User Secrets or an environment variable.
 
 ## Useful URLs
 
-| কাজ | URL |
+| Feature | URL |
 |---|---|
 | Home | `/` |
 | Login | `/Account/Login` |
@@ -247,22 +247,22 @@ Test project-এর জন্য real SQL Server লাগে না; borrowing 
 
 ## Troubleshooting
 
-### `Cannot connect to server` বা database error
+### `Cannot connect to server` or database error
 
-- LocalDB চালু আছে কি না দেখুন: `sqllocaldb info MSSQLLocalDB`
-- SQL Server service চালু আছে কি না দেখুন।
-- connection string-এর `Server=` value আপনার instance অনুযায়ী পরিবর্তন করুন।
-- পুরনো broken database হলে LocalDB-তে database drop করে আবার application চালানো যায়; এতে local data মুছে যাবে।
+- Check whether LocalDB is running: `sqllocaldb info MSSQLLocalDB`
+- Check whether the SQL Server service is running.
+- Change the connection string's `Server=` value to match your instance.
+- If the local database is corrupted, you can drop it and restart the application; this will delete local data.
 
-### `dotnet` command পাওয়া যাচ্ছে না
+### The `dotnet` command is not recognized
 
-.NET 8 SDK ইনস্টল করে নতুন terminal খুলুন:
+Install the .NET 8 SDK and open a new terminal:
 
 ```powershell
 dotnet --version
 ```
 
-Version `8.x.x` দেখা উচিত। শুধু .NET Runtime ইনস্টল থাকলে build করা যাবে না; SDK প্রয়োজন।
+You should see a version beginning with `8.x.x`. The SDK is required for building; the runtime alone is not enough.
 
 ### HTTPS certificate error
 
@@ -271,11 +271,11 @@ dotnet dev-certs https --clean
 dotnet dev-certs https --trust
 ```
 
-তারপর application পুনরায় run করুন।
+Then run the application again.
 
-### Port already in use
+### Port is already in use
 
-অন্য application port ব্যবহার করলে `Properties/launchSettings.json`-এ `5289` এবং `7070` পরিবর্তন করুন, অথবা নির্দিষ্ট port দিয়ে run করুন:
+If another application is using the port, change `5289` and `7070` in `Properties/launchSettings.json`, or run with a specific port:
 
 ```powershell
 dotnet run --project .\LibraryManagementSystem\LibraryManagementSystem.csproj --urls "http://localhost:5099"
@@ -283,7 +283,7 @@ dotnet run --project .\LibraryManagementSystem\LibraryManagementSystem.csproj --
 
 ## Important Security Notes
 
-- `appsettings.json`-এর default librarian code এবং development connection string production-এ ব্যবহার করবেন না।
-- Production secret, SQL password বা API key GitHub-এ commit করবেন না।
-- Production database-এর জন্য environment variables, User Secrets বা secure secret manager ব্যবহার করুন।
-- Database backup রাখুন, বিশেষ করে migration বা schema পরিবর্তনের আগে।
+- Do not use the default librarian code or development connection string from `appsettings.json` in production.
+- Never commit production secrets, SQL passwords, or API keys to GitHub.
+- Use environment variables, User Secrets, or a secure secret manager for the production database.
+- Keep database backups, especially before migrations or schema changes.
