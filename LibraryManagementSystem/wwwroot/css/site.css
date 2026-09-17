@@ -980,7 +980,6 @@ section > h2, section > .d-flex h2 { font-size: 1.55rem; }
     font-size: 0.85rem;
 }
 
-/* Keep all shared surfaces and text readable after the theme switch. */
 body.theme-dark {
     --ink: #e5edf5;
     --muted: #aebdca;
