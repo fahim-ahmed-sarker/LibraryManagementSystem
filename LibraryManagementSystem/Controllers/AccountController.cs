@@ -29,9 +29,7 @@ namespace LibraryManagementSystem.Controllers
             _environment = environment;
         }
 
-        // ==========================================
         // LOGIN
-        // ==========================================
 
         [HttpGet]
         [AllowAnonymous]
@@ -132,9 +130,7 @@ namespace LibraryManagementSystem.Controllers
         }
 
 
-        // ==========================================
         // MEMBER REGISTRATION
-        // ==========================================
 
         [HttpGet]
         [AllowAnonymous]
@@ -214,9 +210,7 @@ namespace LibraryManagementSystem.Controllers
         }
 
 
-        // ==========================================
         // LIBRARIAN REGISTRATION
-        // ==========================================
 
         [HttpGet]
         [AllowAnonymous]
@@ -352,9 +346,7 @@ namespace LibraryManagementSystem.Controllers
         }
 
 
-        // ==========================================
         // LOGOUT
-        // ==========================================
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -369,9 +361,7 @@ namespace LibraryManagementSystem.Controllers
         }
 
 
-        // ==========================================
         // SETTINGS
-        // ==========================================
 
         [HttpGet]
         [Authorize]
