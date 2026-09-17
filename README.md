@@ -4,6 +4,15 @@ An ASP.NET Core MVC library management system with member and librarian workflow
 
 **Repository:** [fahim-ahmed-sarker/LibraryManagementSystem](https://github.com/fahim-ahmed-sarker/LibraryManagementSystem)
 
+## Group Details
+
+| Member | Student ID | Responsibilities |
+| --- | --- | --- |
+| Fahim Ahmed Sarker | 20029294 | Home page hero section, New Arrivals, and Most Borrowed Books |
+| Mohammad Mumtahin | 20030827 | Recommended Books, Currently Available books, and Home page catalogue navigation |
+
+The group jointly contributed to the design and development of the library management system and its home page features.
+
 ## Preview
 
 ![Library logo](LibraryManagementSystem/wwwroot/images/logo/library-logo.png)
