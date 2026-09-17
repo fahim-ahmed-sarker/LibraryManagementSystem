@@ -6,12 +6,10 @@ An ASP.NET Core MVC library management system with member and librarian workflow
 
 ## Group Details
 
-| Member | Student ID | Responsibilities |
+| Student ID | Full Name | Responsibility |
 | --- | --- | --- |
-| Fahim Ahmed Sarker | 20029294 | Home page hero section, New Arrivals, and Most Borrowed Books |
-| Mohammad Mumtahin | 20030827 | Recommended Books, Currently Available books, and Home page catalogue navigation |
-
-The group jointly contributed to the design and development of the library management system and its home page features.
+| **20029294** | **Fahim Ahmed Sarker** | **Librarian Module & Documentation:** Librarian registration and authentication, library profile management, book catalogue CRUD, book search and details, book cover upload, borrowing configuration, transaction management, fine management, feedback moderation, reports, librarian dashboard, system documentation and user manual. |
+| **20030827** | **Mohammad Mumtahin** | **Member Module & Unit Testing:** Member registration and authentication, book browsing and searching, book details and availability, borrowing, returning, reservation, loan renewal, borrowing history, fines, feedback and ratings, member dashboard, and unit testing of core borrowing and transaction functionality. |
 
 ## Preview
 
